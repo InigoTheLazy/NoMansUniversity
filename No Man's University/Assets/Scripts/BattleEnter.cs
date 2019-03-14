@@ -19,7 +19,8 @@ public class BattleEnter : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "New Sprite")
+        if (other.gameObject.tag == "Player")
             SceneManager.LoadScene("BattleScene");
+            //Application.LoadLevel("BattleScene");
     }
 }

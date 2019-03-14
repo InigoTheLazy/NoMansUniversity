@@ -1,0 +1,2115 @@
+fileFormatVersion: 2
+guid: d370543c790037d4fb557ac305694ce8
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: NicePng_rpg-png_2268338_0
+    21300002: NicePng_rpg-png_2268338_1
+    21300004: NicePng_rpg-png_2268338_2
+    21300006: NicePng_rpg-png_2268338_3
+    21300008: NicePng_rpg-png_2268338_4
+    21300010: NicePng_rpg-png_2268338_5
+    21300012: NicePng_rpg-png_2268338_6
+    21300014: NicePng_rpg-png_2268338_7
+    21300016: NicePng_rpg-png_2268338_8
+    21300018: NicePng_rpg-png_2268338_9
+    21300020: NicePng_rpg-png_2268338_10
+    21300022: NicePng_rpg-png_2268338_11
+    21300024: NicePng_rpg-png_2268338_12
+    21300026: NicePng_rpg-png_2268338_13
+    21300028: NicePng_rpg-png_2268338_14
+    21300030: NicePng_rpg-png_2268338_15
+    21300032: NicePng_rpg-png_2268338_16
+    21300034: NicePng_rpg-png_2268338_17
+    21300036: NicePng_rpg-png_2268338_18
+    21300038: NicePng_rpg-png_2268338_19
+    21300040: NicePng_rpg-png_2268338_20
+    21300042: NicePng_rpg-png_2268338_21
+    21300044: NicePng_rpg-png_2268338_22
+    21300046: NicePng_rpg-png_2268338_23
+    21300048: NicePng_rpg-png_2268338_24
+    21300050: NicePng_rpg-png_2268338_25
+    21300052: NicePng_rpg-png_2268338_26
+    21300054: NicePng_rpg-png_2268338_27
+    21300056: NicePng_rpg-png_2268338_28
+    21300058: NicePng_rpg-png_2268338_29
+    21300060: NicePng_rpg-png_2268338_30
+    21300062: NicePng_rpg-png_2268338_31
+    21300064: NicePng_rpg-png_2268338_32
+    21300066: NicePng_rpg-png_2268338_33
+    21300068: NicePng_rpg-png_2268338_34
+    21300070: NicePng_rpg-png_2268338_35
+    21300072: NicePng_rpg-png_2268338_36
+    21300074: NicePng_rpg-png_2268338_37
+    21300076: NicePng_rpg-png_2268338_38
+    21300078: NicePng_rpg-png_2268338_39
+    21300080: NicePng_rpg-png_2268338_40
+    21300082: NicePng_rpg-png_2268338_41
+    21300084: NicePng_rpg-png_2268338_42
+    21300086: NicePng_rpg-png_2268338_43
+    21300088: NicePng_rpg-png_2268338_44
+    21300090: NicePng_rpg-png_2268338_45
+    21300092: NicePng_rpg-png_2268338_46
+    21300094: NicePng_rpg-png_2268338_47
+    21300096: NicePng_rpg-png_2268338_48
+    21300098: NicePng_rpg-png_2268338_49
+    21300100: NicePng_rpg-png_2268338_50
+    21300102: NicePng_rpg-png_2268338_51
+    21300104: NicePng_rpg-png_2268338_52
+    21300106: NicePng_rpg-png_2268338_53
+    21300108: NicePng_rpg-png_2268338_54
+    21300110: NicePng_rpg-png_2268338_55
+    21300112: NicePng_rpg-png_2268338_56
+    21300114: NicePng_rpg-png_2268338_57
+    21300116: NicePng_rpg-png_2268338_58
+    21300118: NicePng_rpg-png_2268338_59
+    21300120: NicePng_rpg-png_2268338_60
+    21300122: NicePng_rpg-png_2268338_61
+    21300124: NicePng_rpg-png_2268338_62
+    21300126: NicePng_rpg-png_2268338_63
+    21300128: NicePng_rpg-png_2268338_64
+    21300130: NicePng_rpg-png_2268338_65
+    21300132: NicePng_rpg-png_2268338_66
+    21300134: NicePng_rpg-png_2268338_67
+    21300136: NicePng_rpg-png_2268338_68
+    21300138: NicePng_rpg-png_2268338_69
+    21300140: NicePng_rpg-png_2268338_70
+    21300142: NicePng_rpg-png_2268338_71
+    21300144: NicePng_rpg-png_2268338_72
+    21300146: NicePng_rpg-png_2268338_73
+    21300148: NicePng_rpg-png_2268338_74
+    21300150: NicePng_rpg-png_2268338_75
+    21300152: NicePng_rpg-png_2268338_76
+    21300154: NicePng_rpg-png_2268338_77
+    21300156: NicePng_rpg-png_2268338_78
+    21300158: NicePng_rpg-png_2268338_79
+    21300160: NicePng_rpg-png_2268338_80
+    21300162: NicePng_rpg-png_2268338_81
+    21300164: NicePng_rpg-png_2268338_82
+    21300166: NicePng_rpg-png_2268338_83
+    21300168: NicePng_rpg-png_2268338_84
+    21300170: NicePng_rpg-png_2268338_85
+    21300172: NicePng_rpg-png_2268338_86
+    21300174: NicePng_rpg-png_2268338_87
+    21300176: NicePng_rpg-png_2268338_88
+    21300178: NicePng_rpg-png_2268338_89
+    21300180: NicePng_rpg-png_2268338_90
+    21300182: NicePng_rpg-png_2268338_91
+    21300184: NicePng_rpg-png_2268338_92
+    21300186: NicePng_rpg-png_2268338_93
+    21300188: NicePng_rpg-png_2268338_94
+    21300190: NicePng_rpg-png_2268338_95
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 504
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79385991efb8314da486744cb963a89
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 504
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35d5a15cf6e6a54cb07ec8881047302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_2
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 504
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79051b80bfce9964bb1dfae950a2ecf6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_3
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 504
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c568f6a2861b894f984b94bfb6a9950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_4
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 504
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea0f2d938130a748a64a5378c119659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_5
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 504
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ed8e7489bf8af428dbc7244efbdc04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_6
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 504
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe83ece29f4ea504b8d424ec9f0a0c62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_7
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 504
+        width: 38
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df54f4bb8d20d2d4ebc71df88b942fb5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_8
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 504
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e64ced2f28fd814a81f5cab1289e7d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_9
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 504
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3e11639f6a63642b0d5ec979bce9ff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_10
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 504
+        width: 42
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09bf8860aa192544c8fe8d837e1a1553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_11
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 504
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05680dcd166af3840b3e7b9ec07a28ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 432
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab42ddc75a39a8d40a20bf29d9ad5a39
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_13
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 432
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc973a3c7b96a843a8f2c325b43c397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_14
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 432
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8ca0f328fcb6e4191a7229114e7775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_15
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 432
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f414a539887b8f84285b087ec9049346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_16
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 432
+        width: 36
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4534edf310ad7e4bbc4b42962234893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_17
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 432
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878372fbe0972ab4fa56b4e380406a57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_18
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 432
+        width: 30
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e0e292202533246860409e38aae4bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_19
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 432
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4556fc4fbca2504f895de1c15cf9c5f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_20
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 432
+        width: 30
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d7d6ef7f744cc42a31e8e003477694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_21
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 432
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54428d6753c18c4c95ea5be6db3a1d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_22
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 432
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1a1327a4756734a9a42a09dc71f6b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_23
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 432
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5a41aa8df540848b168023a7bf19a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 360
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9571c945cedb6478e81b005d78b792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_25
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 360
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a9997e80dad18489f9d2a553826f3f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_26
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 360
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eaa83ca1db90a140a2aa1c1c30280c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_27
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 360
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c377bd7a8af26a7459fdf68b4a8644ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_28
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 360
+        width: 36
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b7352b4c3496a4e926d96e8eed395a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_29
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 360
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96d14a1386fdc64d81fc4aa7e29a462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_30
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 360
+        width: 30
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a454d1c4db8242147a891285bb6893fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_31
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 360
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f00e37241491c34fae2cdba5e31448c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_32
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 360
+        width: 30
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3feee235622952b43a8910b57f1a69cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_33
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 360
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7520ab397e76c343b9821efd425d854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_34
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 360
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c7ff9a284f7924582964be6ad73dce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_35
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 360
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f6f60894742632428b92cd83daf9895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_36
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 288
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2beebe6770459194cb22b8387d249964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_37
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 288
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f504afde5a74420419a2d225947968a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_38
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 288
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a763963c414a46240987db0858cf781b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_39
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 288
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7ce4ce877065247a3f0f089413085b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_40
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 288
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c45eca30b37a9f4aa748228ab6721cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_41
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 288
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc049ce47cb36e746a9bb029ec87c6ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_42
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 288
+        width: 34
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1abafd576c913714c839d9e5a8cf5dd5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_43
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 288
+        width: 38
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c80a7d426edb4542969ea2698241f02
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_44
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 288
+        width: 34
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a8c66376feb284cb77c0a009aa19e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_45
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 288
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1725118dc784d24fbbb9ae928d068b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_46
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 288
+        width: 42
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258ad71bafac10c468a56ff26098446f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_47
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 288
+        width: 42
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d107f1e0f1e874cb047cd7620f643c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_48
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 216
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d95433a3ffb61c4da7d359e7daa554c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_49
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 216
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb6043f126fb7743bfe2f4075a881be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_50
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 216
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4304f57145383f34ebeefe9df566ca57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_51
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 216
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a84cd4eed29e09a46bb5e49cfef5af20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_52
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 216
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14656f390b254694fba66b7c67a7a1a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_53
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 216
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c850cca05689cd244a146eb21713d523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_54
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 216
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a341adab2e577a44c96c5a9258394c4b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_55
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 216
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d26b7a57dbe54a438fed236d97ad8e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_56
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 216
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2685add9a5b5764683da5c419c4865c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_57
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 216
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc7a08c58f29404aadf506afbdedd36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_58
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 216
+        width: 38
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ce016e2cb95594f8abc317b1dab59f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_59
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 216
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de9cdf3032bd424ba7e0f7647ac1d0c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_60
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 144
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf09ca5e434a144492a93d7fdd19ced
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_61
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 144
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f223c9c04d076804fa633f505635499c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_62
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 144
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12aebb3b07945cf40b356a8c0b14176e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_63
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 144
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b98641c9dc8a6a4dab6bbf0629a053d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_64
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 144
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5665cbad504c1f4687e85d0726ebc3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_65
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 144
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c238cbab095332c46961d33e60b4694b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_66
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 144
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78de54d073f21e4d8320325bcf2da31
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_67
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 144
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095cf3c9eebccd84295a939c704481f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_68
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 144
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49df6c376d718004cb3273c949668420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_69
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 144
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00604ae62aed6f94e8062ebd86a883f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_70
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 144
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d861a35de227c247a634257b51436fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_71
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 144
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42d4f3e490a8754892e43ff3467f5c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_72
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 72
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0fc29beb8cb79344ba7f0e5850dc0b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_73
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 72
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec720004d7c00242b2c216f59da6411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_74
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 72
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49143a2e122036c45a6f99577443cf2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_75
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 72
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ecc54309a5cc746ae586bb661d4aac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_76
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 72
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 076dafec8e0ac2d4caccc263031c5094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_77
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 72
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50cfba3682ad986448b4a2b23456ff47
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_78
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 72
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c79864fd7313b45b83950aa1822d23
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_79
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 72
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da16184b8cd1feb4582ca7d0f4b434e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_80
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 72
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a5970e576c7054c91457154c70df3d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_81
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 72
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91b3f50741b90e4bb7eceb510eeca53
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_82
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 72
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70a20006bcf62c468aad748537c6b84
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_83
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 72
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fab21da5ec155446a0313ac90fad47e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_84
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4beb27c74815448aed00777933f075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_85
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 0
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4084e3c5069b0734d9f1bef0a263de0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_86
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 0
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 938aaa552022de14a8231a9a046a6ca7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_87
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 0
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370675d77c2ea2040a22d185f2930b65
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_88
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 0
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f692dec2f6978c94c866044b2c3a8047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_89
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 0
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4d3b01d95d62743b56837313be7326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_90
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 0
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 881edfc4f84d5cd4886c78d0931b711e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_91
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 0
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5cf78dc905a6043b9339ec70d37982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_92
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 0
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667466d6a7adfc6449780eb0cc3ed153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_93
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 0
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e6b3970c3d5304fb3c5b4aa49c390f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_94
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 0
+        width: 38
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58495c2b74ea6c418673a657d88cd13
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_rpg-png_2268338_95
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 0
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a169aaa2cf5be458e6ae8bf437d5d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8aae6021417b50841958d0ebb26d36f1
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

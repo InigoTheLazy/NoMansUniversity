@@ -8,10 +8,11 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float speed;
     private Vector2 direction;
+    private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -23,6 +24,15 @@ public class Player : MonoBehaviour
     public void Move()
     {
         transform.Translate(direction*speed*Time.deltaTime);
+        if(direction.x != 0 || direction.y != 0)
+        {
+            AnimateMovement(direction);
+        }
+        else
+        {
+            animator.SetLayerWeight(1, 0);
+        }
+        
     }
     private void GetInput()
     {
@@ -54,5 +64,11 @@ public class Player : MonoBehaviour
             
         }
 
+    }
+    public void AnimateMovement(Vector2 direction)
+    {
+        animator.SetLayerWeight(1, 1);
+        animator.SetFloat("x", direction.x);
+        animator.SetFloat("y", direction.y);
     }
 }
