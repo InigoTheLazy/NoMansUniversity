@@ -7,7 +7,7 @@ public class enemycon : MonoBehaviour
 {
     public float enemyHP = 100;
     public float enemyMaxHP = 100;
-    public float enemyAttPow = 20;
+    public float enemyAttPow = 50;
     public Transform damTextObj;
     public Slider healthBar;
     public Text HPText;
@@ -51,7 +51,7 @@ public class enemycon : MonoBehaviour
     IEnumerator turnEnd()
     {
         yield return new WaitForSeconds(4);
-        battleflow.currentDamage = enemyAttPow;
+        battleflow.currentDamage = 50;
         herocon.heroHP -= battleflow.currentDamage;
         Instantiate(damTextObj, new Vector2(-6f, 4.95f), damTextObj.rotation);
     }
