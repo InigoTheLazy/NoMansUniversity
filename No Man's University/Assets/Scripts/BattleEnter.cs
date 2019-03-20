@@ -5,22 +5,43 @@ using UnityEngine.SceneManagement;
 
 public class BattleEnter : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public string dialogue;
+    private DialogueManager dMAn;
+    private bool playerinzone;
+    [SerializeField] private string loadlevel;
     void Start()
     {
-        
+        playerinzone = false;
+        dMAn = FindObjectOfType<DialogueManager>();
     }
-
-    // Update is called once per frame
     void Update()
     {
-       
+        if ( playerinzone && Input.GetKeyDown(KeyCode.E))
+        {
+            SceneManager.LoadScene(loadlevel);
+        }
     }
-
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player")
-            SceneManager.LoadScene("BattleScene");
-            //Application.LoadLevel("BattleScene");
+        if (other.gameObject.name == "Player")
+        {
+            playerinzone = true;
+        }
+    }
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.name == "Player")
+        {
+            playerinzone = false;
+            dMAn.DisableBox();
+        }
+    }
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.name == "Player")
+        {
+            dMAn.ShowBox(dialogue);
+        }
+
     }
 }
