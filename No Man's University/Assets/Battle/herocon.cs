@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class herocon : MonoBehaviour
 {
@@ -28,6 +29,8 @@ public class herocon : MonoBehaviour
         if (heroHP <= 0)
         {
             Destroy(gameObject);
+            SceneManager.LoadScene("MainMenuScene");
+            heroHP = 100;
         }
 
     }
