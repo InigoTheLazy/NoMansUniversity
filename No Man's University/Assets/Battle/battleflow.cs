@@ -11,18 +11,17 @@ public class battleflow : MonoBehaviour
     public static string damageDisplay = "n";
     public static string enemyDefeated = "n";
 
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (enemyDefeated == "y")
         {
             SceneManager.LoadScene("WalkingScene");
+            enemyDefeated = "n";
         }
     }
 
