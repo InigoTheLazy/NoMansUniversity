@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BattleScene.unity
     guid: 39d768d164420584699334ef25de9382
+  - enabled: 1
+    path: Assets/Scenes/WalkingScenev2.unity
+    guid: ddd01f5496d989645843452b88b855a1
   m_configObjects: {}

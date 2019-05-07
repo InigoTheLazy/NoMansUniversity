@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     [SerializeField]
-    private float speed;
+    private float speed = 1;
     private Vector2 direction;
     private Animator animator;
     // Start is called before the first frame update
