@@ -24,7 +24,7 @@ public class enemycon : MonoBehaviour
     {
         healthBar.maxValue = enemyMaxHP;
         healthBar.value = enemyHP;
-        HPText.text = "HP: " + enemyHP + "/" + enemyMaxHP;
+        HPText.text = enemyHP + "/" + enemyMaxHP;
 
         if (battleflow.whichturn == 2)
         {

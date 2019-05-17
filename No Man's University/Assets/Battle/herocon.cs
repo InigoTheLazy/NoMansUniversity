@@ -24,7 +24,7 @@ public class herocon : MonoBehaviour
     {
         healthBar.maxValue = heroMaxHP;
         healthBar.value = heroHP;
-        HPText.text = "HP: " + heroHP + "/" + heroMaxHP;
+        HPText.text = heroHP + "/" + heroMaxHP;
 
         if (heroHP <= 0)
         {
