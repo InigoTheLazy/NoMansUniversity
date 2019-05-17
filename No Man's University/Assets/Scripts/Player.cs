@@ -9,10 +9,23 @@ public class Player : MonoBehaviour
     private float speed = 1;
     private Vector2 direction;
     private Animator animator;
+    private static bool playerExists;
+    public string startPoint;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+
+        if(!playerExists)
+        {
+            playerExists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+        
     }
 
     // Update is called once per frame

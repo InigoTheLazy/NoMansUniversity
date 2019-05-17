@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WalkingScenev2.unity
     guid: ddd01f5496d989645843452b88b855a1
+  - enabled: 1
+    path: Assets/Scenes/WalkingScenev3.unity
+    guid: 62950bad753ab534cb806fe90a00682a
   m_configObjects: {}

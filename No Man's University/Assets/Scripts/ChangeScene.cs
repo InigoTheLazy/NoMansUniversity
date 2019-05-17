@@ -5,13 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
+    public string exitPoint;
     public string levelName;
-    // Start is called before the first frame update
+    private Player thePlayer;
+    void Start()
+    {
+        thePlayer = FindObjectOfType<Player>();
+    }
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player"))
         {
             SceneManager.LoadScene(levelName);
+            thePlayer.startPoint = exitPoint;
         }
     }
 }
