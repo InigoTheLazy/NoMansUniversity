@@ -6,20 +6,27 @@ using UnityEngine.SceneManagement;
 
 public class herocon : MonoBehaviour
 {
-    public static float heroHP = 100;
-    public static float heroMaxHP = 100;
+    public static float heroHP;
+    public int heroMaxHP;
+    public int armor;
+    public int str;
+    public int dex;
     public Transform damTextObj;
     public Slider healthBar;
     public Text HPText;
     public Button button1;
+    public GameObject playerStats;
 
-    // Start is called before the first frame update
+    void Awake()
+    {
+        FindStats();
+    }
+
     void Start()
     {
          
     }
 
-    // Update is called once per frame
     void Update()
     {
         healthBar.maxValue = heroMaxHP;
@@ -37,6 +44,7 @@ public class herocon : MonoBehaviour
 
     IEnumerator turnEnd()
     {
+        battleflow.whichturn = 0;
         yield return new WaitForSeconds(4);
         battleflow.whichturn = 2;
         Instantiate(damTextObj, new Vector2(5.85f, 4.95f), damTextObj.rotation);
@@ -45,16 +53,30 @@ public class herocon : MonoBehaviour
 
     public void attack1 ()
     {
-        battleflow.currentDamage = 40;
-        GetComponent<Animator>().SetTrigger("heroAttack");
-        StartCoroutine(turnEnd());
+        if (battleflow.whichturn == 1)
+        {
+            battleflow.currentDamage = 15 + (str * 5);
+            GetComponent<Animator>().SetTrigger("heroAttack");
+            StartCoroutine(turnEnd());
+        }
     }
 
     public void skill1 ()
     {
-        battleflow.currentDamage = 99;
+        battleflow.currentDamage = 50 + (str * 5);
         GetComponent<Animator>().SetTrigger("heroSkill");
         StartCoroutine(turnEnd());
     }
+
+    private void FindStats()
+    {
+        playerStats = GameObject.Find("PlayerGM");
+        heroMaxHP = playerStats.GetComponent<PlayerData>().hitPointsMax;
+        heroHP = playerStats.GetComponent<PlayerData>().hitPointsCur;
+        armor = playerStats.GetComponent<PlayerData>().armor;
+        str = playerStats.GetComponent<PlayerData>().strStat;
+        dex = playerStats.GetComponent<PlayerData>().dexStat;
+    }
+
 }
 

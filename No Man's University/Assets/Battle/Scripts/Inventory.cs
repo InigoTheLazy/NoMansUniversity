@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    private bool inventoryEnabled;
+    public bool inventoryEnabled;
     public GameObject InventoryPanel;
 
     private int allSlots;
@@ -15,7 +13,6 @@ public class Inventory : MonoBehaviour
 
     void Start()
     {
-        inventoryEnabled = true;
         allSlots = 6;
         slot = new GameObject[allSlots];
 
@@ -30,16 +27,19 @@ public class Inventory : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Backspace))
             inventoryEnabled = false;
 
         if (inventoryEnabled)
         {
+            this.gameObject.GetComponent<battleflow>().ShowPanel(false);
             InventoryPanel.SetActive(true);
         }
 
         if (!inventoryEnabled)
         {
+            this.gameObject.GetComponent<battleflow>().ShowPanel(true);
+
             InventoryPanel.SetActive(false);
         }
     }
@@ -76,9 +76,9 @@ public class Inventory : MonoBehaviour
                 slot[i].GetComponent<Slot>().UpdateSlot();
                 slot[i].GetComponent<Slot>().empty = false;
 
+                return;
             }
 
-            return;
         }
     }
 }

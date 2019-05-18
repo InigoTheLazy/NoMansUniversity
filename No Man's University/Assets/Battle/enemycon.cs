@@ -30,7 +30,7 @@ public class enemycon : MonoBehaviour
         {
             GetComponent<Animator>().SetTrigger("enemyAttack");
             StartCoroutine(turnEnd());
-            battleflow.whichturn = 1;
+            Invoke("EnemyTurnEnd", 3);
         }
 
         if (battleflow.damageDisplay == "y" && battleflow.whichturn != 2)
@@ -50,11 +50,17 @@ public class enemycon : MonoBehaviour
 
     IEnumerator turnEnd()
     {
+        battleflow.whichturn = 0;
         yield return new WaitForSeconds(4);
         battleflow.currentDamage = 50;
         herocon.heroHP -= battleflow.currentDamage;
         Instantiate(damTextObj, new Vector2(-6f, 4.95f), damTextObj.rotation);
     }
 
+    private void EnemyTurnEnd()
+    {
+        battleflow.whichturn = 1;
+    }
 
 }
+
