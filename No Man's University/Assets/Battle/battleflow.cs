@@ -80,8 +80,8 @@ public class battleflow : MonoBehaviour
 
     private void DecreaseWASD(char letter)
     {
-        testSubject.SetActive(true);
-        Invoke();
+        /*testSubject.SetActive(true);
+        Invoke();*/
 
     }
 

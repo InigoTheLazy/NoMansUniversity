@@ -3307,7 +3307,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 367047387
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 961894ff695cc6e4c97ee88ad5a3b335, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4934,7 +4934,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   combatChoiceBox: {fileID: 1504745651}
   cursor: {fileID: 627036247}
-  combatInfoText: {fileID: 353977027}
+  combatInfoText: {fileID: 1856762737}
+  activeLetter: {fileID: 0}
+  initiateDeflect: 0
 --- !u!114 &1032703563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8451,7 +8453,7 @@ MonoBehaviour:
   description: Heals for 50 hit points.
   empty: 0
   icon: {fileID: 21300000, guid: 629b49cc96e713b41af3b61273a28e98, type: 3}
-  slotIconGO: {fileID: 1280194740}
+  slotIconGO: {fileID: 0}
 --- !u!1 &1685856405
 GameObject:
   m_ObjectHideFlags: 0
@@ -9186,7 +9188,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 367047387
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 39db62a5386f55c4b9a0e965e69e0cb6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -10601,10 +10603,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bf32eac4554e44419c59546e74485fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heroMaxHP: 100
-  armor: 5
-  str: 5
-  dex: 5
+  heroMaxHP: 0
+  armor: 0
+  str: 0
+  dex: 0
   damTextObj: {fileID: 3766054355512639470, guid: bb6ebd22d08b07b4db1698da9e73dc01,
     type: 3}
   healthBar: {fileID: 476612691}
@@ -10696,7 +10698,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1245333113
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

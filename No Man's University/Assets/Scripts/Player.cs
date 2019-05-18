@@ -19,11 +19,11 @@ public class Player : MonoBehaviour
         if(!playerExists)
         {
             playerExists = true;
-            DontDestroyOnLoad(transform.gameObject);
+            DontDestroyOnLoad(this.transform.gameObject);
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
         
     }
