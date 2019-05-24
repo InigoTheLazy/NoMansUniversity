@@ -1,0 +1,303 @@
+fileFormatVersion: 2
+guid: c14d17c04d9dc9e479243f64915406b8
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: BG_GO/BG_GO
+    100002: BG_GO/BG_GO/bed
+    100004: BG_GO/BG_GO/BG
+    100006: BG_GO/BG_GO/blanket
+    100008: BG_GO/BG_GO/closet
+    100010: BG_GO/BG_GO/doors
+    100012: BG_GO/BG_GO/pillow
+    400000: BG_GO/BG_GO/Transform
+    400002: BG_GO/BG_GO/bed/Transform
+    400004: BG_GO/BG_GO/BG/Transform
+    400006: BG_GO/BG_GO/blanket/Transform
+    400008: BG_GO/BG_GO/closet/Transform
+    400010: BG_GO/BG_GO/doors/Transform
+    400012: BG_GO/BG_GO/pillow/Transform
+    2800000: BedRoom
+    21200000: BG_GO/BG_GO/bed/SpriteRenderer
+    21200002: BG_GO/BG_GO/BG/SpriteRenderer
+    21200004: BG_GO/BG_GO/blanket/SpriteRenderer
+    21200006: BG_GO/BG_GO/closet/SpriteRenderer
+    21200008: BG_GO/BG_GO/doors/SpriteRenderer
+    21200010: BG_GO/BG_GO/pillow/SpriteRenderer
+    21300000: doors
+    21300002: pillow
+    21300004: closet
+    21300006: blanket
+    21300008: bed
+    21300010: BG
+    100100000: BG_GO
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: doors
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3470
+      y: 2012
+      width: 358
+      height: 1047
+    spriteID: 58a229882b34f124aaf18f148ba78af5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 897, y: 1343}
+  - name: pillow
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3470
+      y: 3067
+      width: 247
+      height: 100
+    spriteID: c1b98e2d91bf8ed418f12b414fa89646
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3372, y: 2085}
+  - name: closet
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2012
+      width: 1858
+      height: 1185
+    spriteID: 06303b73cecab3d428a3aa4c424152f9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -94, y: 1287}
+  - name: blanket
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1870
+      y: 2593
+      width: 896
+      height: 280
+    spriteID: 7fc9b40cd6d780e4aa17d0455d4af6d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1511, y: 1823}
+  - name: bed
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1870
+      y: 2012
+      width: 1592
+      height: 573
+    spriteID: 3b711bbad9ba89e4faa07e39a0bef668
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1870, y: 1266}
+  - name: BG
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 3000
+      height: 2000
+    spriteID: f7ee857b7c6f64b4ba39e65a3b6baa35
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 2048
+  importedTextureHeight: 2048
+  documentSize: {x: 3000, y: 2000}
+  textureActualWidth: 4096
+  textureActualHeight: 4096
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: doors
+    spriteName: doors
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 58a229882b34f124aaf18f148ba78af5
+    layerID: 150
+    mosaicPosition: {x: 3470, y: 2012}
+  - name: pillow
+    spriteName: pillow
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c1b98e2d91bf8ed418f12b414fa89646
+    layerID: 151
+    mosaicPosition: {x: 3470, y: 3067}
+  - name: closet
+    spriteName: closet
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 06303b73cecab3d428a3aa4c424152f9
+    layerID: 57
+    mosaicPosition: {x: 4, y: 2012}
+  - name: blanket
+    spriteName: blanket
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7fc9b40cd6d780e4aa17d0455d4af6d2
+    layerID: 44
+    mosaicPosition: {x: 1870, y: 2593}
+  - name: bed
+    spriteName: bed
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3b711bbad9ba89e4faa07e39a0bef668
+    layerID: 24
+    mosaicPosition: {x: 1870, y: 2012}
+  - name: BG
+    spriteName: BG
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f7ee857b7c6f64b4ba39e65a3b6baa35
+    layerID: 19
+    mosaicPosition: {x: 4, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+  boneGOs: []
+  generateGOHierarchy: 0
