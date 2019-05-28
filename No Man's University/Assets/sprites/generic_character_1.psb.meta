@@ -2,58 +2,8 @@ fileFormatVersion: 2
 guid: 95cb588be9b1a114abff3468a593f7c0
 ScriptedImporter:
   fileIDToRecycleName:
-    100000: legs_GO/legs_GO
-    100002: legs_GO/legs_GO/arm
-    100004: legs_GO/legs_GO/arm_1
-    100006: legs_GO/legs_GO/body
-    100008: legs_GO/legs_GO/eyes_open
-    100010: legs_GO/legs_GO/hair
-    100012: legs_GO/legs_GO/hand
-    100014: legs_GO/legs_GO/hand_1
-    100016: legs_GO/legs_GO/head
-    100018: legs_GO/legs_GO/legs
-    100020: legs_GO/legs_GO/mouth
-    100022: legs_GO/legs_GO/shoulder
-    100024: legs_GO/legs_GO/shoulder_1
-    400000: legs_GO/legs_GO/Transform
-    400002: legs_GO/legs_GO/arm/Transform
-    400004: legs_GO/legs_GO/arm_1/Transform
-    400006: legs_GO/legs_GO/body/Transform
-    400008: legs_GO/legs_GO/eyes_open/Transform
-    400010: legs_GO/legs_GO/hair/Transform
-    400012: legs_GO/legs_GO/hand/Transform
-    400014: legs_GO/legs_GO/hand_1/Transform
-    400016: legs_GO/legs_GO/head/Transform
-    400018: legs_GO/legs_GO/legs/Transform
-    400020: legs_GO/legs_GO/mouth/Transform
-    400022: legs_GO/legs_GO/shoulder/Transform
-    400024: legs_GO/legs_GO/shoulder_1/Transform
     2800000: generic_character_1
-    21200000: legs_GO/legs_GO/arm/SpriteRenderer
-    21200002: legs_GO/legs_GO/arm_1/SpriteRenderer
-    21200004: legs_GO/legs_GO/body/SpriteRenderer
-    21200006: legs_GO/legs_GO/eyes_open/SpriteRenderer
-    21200008: legs_GO/legs_GO/hair/SpriteRenderer
-    21200010: legs_GO/legs_GO/hand/SpriteRenderer
-    21200012: legs_GO/legs_GO/hand_1/SpriteRenderer
-    21200014: legs_GO/legs_GO/head/SpriteRenderer
-    21200016: legs_GO/legs_GO/legs/SpriteRenderer
-    21200018: legs_GO/legs_GO/mouth/SpriteRenderer
-    21200020: legs_GO/legs_GO/shoulder/SpriteRenderer
-    21200022: legs_GO/legs_GO/shoulder_1/SpriteRenderer
-    21300000: arm
-    21300002: hand
-    21300004: shoulder
-    21300006: arm_1
-    21300008: hand_1
-    21300010: shoulder_1
-    21300012: mouth
-    21300014: hair
-    21300016: eyes_open
-    21300018: head
-    21300020: body
-    21300022: legs
-    100100000: legs_GO
+    21300024: generic_character_1_1
   externalObjects: {}
   userData: 
   assetBundleName: 
@@ -77,7 +27,7 @@ ScriptedImporter:
     streamingMipmapsPriority: 0
     nPOTScale: 1
     sRGBTexture: 1
-    spriteMode: 2
+    spriteMode: 1
     spriteExtrude: 1
     spriteMeshType: 1
     alignment: 0
@@ -113,18 +63,18 @@ ScriptedImporter:
     compressionQualitySet: 0
     textureFormatSet: 0
   spriteImportData:
-  - name: 
+  - name: generic_character_1_1
     originalName: 
-    pivot: {x: 0, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 0
-      height: 0
-    spriteID: 
+      width: 1500
+      height: 1500
+    spriteID: fb2ecba9efa3e014daea266da165861a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -396,8 +346,8 @@ ScriptedImporter:
   importedTextureWidth: 1024
   importedTextureHeight: 1024
   documentSize: {x: 1500, y: 1500}
-  textureActualWidth: 1024
-  textureActualHeight: 1024
+  textureActualWidth: 1500
+  textureActualHeight: 1500
   spritePackingTag: 
   resliceFromLayer: 0
   characterMode: 1

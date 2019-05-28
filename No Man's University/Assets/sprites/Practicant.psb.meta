@@ -457,14 +457,14 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 54
     mosaicPosition: {x: 0, y: 0}
   - name: mouth
     spriteName: 
     isGroup: 1
     parentIndex: 0
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 50
     mosaicPosition: {x: 0, y: 0}
   - name: mouth
@@ -485,7 +485,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: 0
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 52
     mosaicPosition: {x: 0, y: 0}
   - name: eyes_open
@@ -506,7 +506,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 56
     mosaicPosition: {x: 0, y: 0}
   - name: collar2
@@ -520,7 +520,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: 7
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 77
     mosaicPosition: {x: 0, y: 0}
   - name: arm
@@ -548,7 +548,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: 7
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 49
     mosaicPosition: {x: 0, y: 0}
   - name: arm
