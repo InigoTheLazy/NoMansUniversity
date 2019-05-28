@@ -13,6 +13,18 @@ public class Player : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+
+        if (!playerExists )
+        {
+            playerExists = true;
+            DontDestroyOnLoad(this.transform.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+        
+
     }
 
     // Update is called once per frame
