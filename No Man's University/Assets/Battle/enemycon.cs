@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,15 +10,8 @@ public class enemycon : MonoBehaviour
     public Transform damTextObj;
     public Slider healthBar;
     public Text HPText;
+    public int damageMultiplier = 0;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         healthBar.maxValue = enemyMaxHP;
@@ -52,7 +44,7 @@ public class enemycon : MonoBehaviour
     {
         battleflow.whichturn = 0;
         yield return new WaitForSeconds(4);
-        battleflow.currentDamage = 50;
+        battleflow.currentDamage = 50 - damageMultiplier;
         herocon.heroHP -= battleflow.currentDamage;
         Instantiate(damTextObj, new Vector2(-6f, 4.95f), damTextObj.rotation);
     }
