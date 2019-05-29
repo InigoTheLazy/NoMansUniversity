@@ -6,14 +6,15 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     [SerializeField]
-    private float speed;
+    private float speed = 1;
     private Vector2 direction;
     private Animator animator;
+    private static bool playerExists;
+    public string startPoint;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
-
         if (!playerExists )
         {
             playerExists = true;
@@ -24,7 +25,6 @@ public class Player : MonoBehaviour
             Destroy(this.gameObject);
         }
         
-
     }
 
     // Update is called once per frame

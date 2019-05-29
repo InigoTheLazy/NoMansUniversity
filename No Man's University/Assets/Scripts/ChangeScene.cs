@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    public string startPoint;
     public string exitPoint;
     public string levelName;
     private Player thePlayer;
