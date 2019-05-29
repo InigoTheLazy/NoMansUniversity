@@ -1,17 +1,14 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class StartMenu : MonoBehaviour
 {
-    public GameObject playerStatsData;
-
     public void PlayGame()
     {
-        playerStatsData.GetComponent<PlayerData>().CreateBaseStats();
         SceneManager.LoadScene("WalkingScene");
     }
-
-
 
     public void QuitGame()
     {
