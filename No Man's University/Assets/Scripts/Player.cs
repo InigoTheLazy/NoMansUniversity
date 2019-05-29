@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     private Animator animator;
     private static bool playerExists;
     public string startPoint;
+    float lockPos = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +25,7 @@ public class Player : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        
+
     }
 
     // Update is called once per frame
@@ -32,6 +33,12 @@ public class Player : MonoBehaviour
     {
         GetInput();
         Move();
+        transform.rotation = Quaternion.Euler(lockPos, lockPos, lockPos);
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name == "BattleScene")
+        {
+            Destroy(this.gameObject);
+        }
     }
     public void Move()
     {
