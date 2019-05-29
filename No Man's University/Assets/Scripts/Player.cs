@@ -6,25 +6,25 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     [SerializeField]
-    private float speed = 1;
+    private float speed;
     private Vector2 direction;
     private Animator animator;
     private static bool playerExists;
     public string startPoint;
     float lockPos = 0;
-    // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
-        if (!playerExists )
-        {
-            playerExists = true;
-            DontDestroyOnLoad(this.transform.gameObject);
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
+
+        //if (!playerExists )
+        //{
+        //    playerExists = true;
+        //    DontDestroyOnLoad(this.transform.gameObject);
+        //}
+        //else
+        //{
+        //    Destroy(this.gameObject);
+        //}
 
     }
 
