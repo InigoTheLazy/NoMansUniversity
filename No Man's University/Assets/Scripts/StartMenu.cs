@@ -8,7 +8,8 @@ using UnityEngine.Audio;
 public class StartMenu : MonoBehaviour
 {
     public AudioMixer audioMixer;
-    public Button VolumeButton;
+    public Text musicButtonText, soundButtonText;
+    private float mutedVolume = 0;
 
     void Start()
     {
@@ -25,26 +26,49 @@ public class StartMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void SetVolume()
+    public void SetVolume(float volume)
     {
-        //float[] volumes = { 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
-        //float SelectedVolume = 100;
+        audioMixer.SetFloat("volume", volume);
+        audioMixer.GetFloat("volume", out float vol);
 
-        //audioMixer.SetFloat("volume", volume);
-
-        float volume;
-        audioMixer.GetFloat("volume", out volume);
-
-        Debug.Log("Volume: " + volume);
+        if (vol > -80)
+            soundButtonText.text = "sound on";
+        else
+            soundButtonText.text = "sound off";
     }
 
     public void ToggleSound()
     {
+        audioMixer.GetFloat("volume", out float vol);
+
+        if (vol > -80)
+        {
+            SetVolume(-80);
+            mutedVolume = vol;
+            soundButtonText.text = "sound off";
+        }
+        else
+        {
+            SetVolume(mutedVolume);
+            soundButtonText.text = "sound on";
+        }
 
     }
 
     public void ToggleMusic()
     {
+        audioMixer.GetFloat("musicVolume", out float vol);
 
+        if (vol > -80)
+        {
+            audioMixer.SetFloat("musicVolume", -80);
+            musicButtonText.text = "music off";
+
+        }
+        else
+        {
+            audioMixer.SetFloat("musicVolume", 0);
+            musicButtonText.text = "music on";
+        }
     }
 }
