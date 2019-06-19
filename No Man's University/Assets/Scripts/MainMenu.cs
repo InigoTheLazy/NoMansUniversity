@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class StartMenu : MonoBehaviour
+public class MainMenu : MonoBehaviour
 {
     public AudioMixer audioMixer;
     public Text musicButtonText, soundButtonText;
@@ -16,9 +16,14 @@ public class StartMenu : MonoBehaviour
         
     }
 
-    public void PlayGame()
+    public void NewGame()
     {
         SceneManager.LoadScene("WalkingScene");
+    }
+
+    public void ShowMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void QuitGame()

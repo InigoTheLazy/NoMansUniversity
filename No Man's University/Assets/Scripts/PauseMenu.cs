@@ -3,7 +3,7 @@
 public class PauseMenu : MonoBehaviour
 {
     public static bool gameIsPaused = false;
-    public GameObject pauseMenu, startMenu, options, about;
+    public GameObject selectGame, pauseMenu, options;
 
     void Start()
     {
@@ -35,11 +35,9 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         pauseMenu.SetActive(true);
 
-        if (startMenu.active != true)
-            startMenu.SetActive(true);
+        if (selectGame.active != true)
+            selectGame.SetActive(true);
         if (options.active != false)
             options.SetActive(false);
-        if (about.active != false)
-            about.SetActive(false);
     }
 }
