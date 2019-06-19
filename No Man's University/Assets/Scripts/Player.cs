@@ -16,15 +16,15 @@ public class Player : MonoBehaviour
     {
         animator = GetComponent<Animator>();
 
-        //if (!playerExists )
-        //{
-        //    playerExists = true;
-        //    DontDestroyOnLoad(this.transform.gameObject);
-        //}
-        //else
-        //{
-        //    Destroy(this.gameObject);
-        //}
+		if (!playerExists)
+		{
+			playerExists = true;
+			DontDestroyOnLoad(this.transform.gameObject);
+		}
+		else
+		{
+			Destroy(this.gameObject);
+		}
 
     }
 
