@@ -9,20 +9,18 @@ public class PlayerData : MonoBehaviour
     public int armor;
     public int hitPointsMax;
     public int hitPointsCur;
+    public int coins;
+    public int experience;
 
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
     }
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
-        
+        hitPointsMax = 50 + (conStat * 10);
+        hitPointsCur = hitPointsMax;
     }
 
     public void CreateBaseStats()
@@ -34,5 +32,7 @@ public class PlayerData : MonoBehaviour
         armor = 20;
         hitPointsMax = 50 + (conStat * 10);
         hitPointsCur = hitPointsMax;
+        coins = 50;
+        experience = 0;
     }
 }

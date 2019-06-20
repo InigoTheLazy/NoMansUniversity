@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
     public static bool gameIsPaused = false;
-    public GameObject pauseMenu, startMenu, options, about;
+    public GameObject pauseMenuCanvas, selectGame, options;
 
     void Start()
     {
@@ -26,20 +27,23 @@ public class PauseMenu : MonoBehaviour
     {
         gameIsPaused = false;
         Time.timeScale = 1f;
-        pauseMenu.SetActive(false);
+        pauseMenuCanvas.SetActive(false);
     }
 
     void Pause()
     {
         gameIsPaused = true;
         Time.timeScale = 0f;
-        pauseMenu.SetActive(true);
+        pauseMenuCanvas.SetActive(true);
 
-        if (startMenu.active != true)
-            startMenu.SetActive(true);
+        if (selectGame.active != true)
+            selectGame.SetActive(true);
         if (options.active != false)
             options.SetActive(false);
-        if (about.active != false)
-            about.SetActive(false);
+    }
+
+    public void ShowMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }

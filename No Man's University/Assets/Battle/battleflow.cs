@@ -5,14 +5,18 @@ public class battleflow : MonoBehaviour
 {
     public static int whichturn = 1;
     public static float currentDamage = 0;
+    public static float damageMultiplier = 1;
 
     public static string damageDisplay = "n";
     public static string enemyDefeated = "n";
+    public static int enemyNumber = 0;
 
     public GameObject combatChoiceBox;
     public GameObject cursor;
     public GameObject combatInfoText;
     public GameObject enemyCharacter;
+    public GameObject walkingPlayer;
+    public GameObject playerStats;
     private bool defendYourself = false;
     private char defendLetter;
 
@@ -28,6 +32,8 @@ public class battleflow : MonoBehaviour
 
     void Start()
     {
+        playerStats = GameObject.Find("PlayerGM(Clone)");
+        walkingPlayer = GameObject.Find("Player");
         initiateDeflect = true;
     }
 
@@ -35,9 +41,27 @@ public class battleflow : MonoBehaviour
     {
         if (enemyDefeated == "y")
         {
-            GameObject.Find("Hero").GetComponent<herocon>().strengthPotionOn = false;
-            SceneManager.LoadScene("WalkingScene");
+            GameObject.Find("generic_character_1 Variant").GetComponent<herocon>().strengthPotionOn = false;
+            switch (enemyNumber)
+            {
+                case 0:
+                    playerStats.GetComponent<PlayerData>().coins += 10;
+                    playerStats.GetComponent<PlayerData>().experience += 100;
+                    break;
+                case 1:
+                    playerStats.GetComponent<PlayerData>().coins += 50;
+                    playerStats.GetComponent<PlayerData>().experience += 250;
+                    break;
+                case 2:
+                    playerStats.GetComponent<PlayerData>().coins += 250;
+                    playerStats.GetComponent<PlayerData>().experience += 1000;
+                    break;
+
+            }
+            SceneManager.LoadScene("WalkingScenev4");
             enemyDefeated = "n";
+            whichturn = 1;
+            walkingPlayer.SetActive(true);
         }
 
         if (whichturn == 0 || whichturn == 2)
@@ -111,7 +135,15 @@ public class battleflow : MonoBehaviour
 
     public void Run ()
     {
-        SceneManager.LoadScene("WalkingScene");
+        this.gameObject.GetComponent<BattleVideos>().PlayVideo("Assets/Battle/Videos/i_am_speed.mp4", 4);
+
+        Invoke("Run2", 3);
+    }
+
+    private void Run2()
+    {
+        SceneManager.LoadScene("WalkingScenev4");
+        walkingPlayer.SetActive(true);
     }
 
     private void DamageDecreaseAttempt()
@@ -153,7 +185,7 @@ public class battleflow : MonoBehaviour
         TurnOffAllLetters();
         letter.SetActive(true);
         defendYourself = true;
-        Invoke("NoMoreDefending", 1f);
+        Invoke("NoMoreDefending", 10f);
 
 
         Invoke("TurnOffAllLetters", 1f);
@@ -170,16 +202,17 @@ public class battleflow : MonoBehaviour
     private void NoMoreDefending()
     {
         defendYourself = false;
+        FailedDefense();
     }
 
     private void SuccesfulDefense()
     {
-        enemyCharacter.GetComponent<enemycon>().damageMultiplier = 10;
+        damageMultiplier = 0.5f;
     }
 
     private void FailedDefense()
     {
-        enemyCharacter.GetComponent<enemycon>().damageMultiplier = 0;
+        damageMultiplier = 1;
     }
 
 }

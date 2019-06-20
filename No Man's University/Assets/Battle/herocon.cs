@@ -15,10 +15,13 @@ public class herocon : MonoBehaviour
     public Text HPText;
     public Button button1;
     public GameObject playerStats;
+    public GameObject walkingPlayer;
     public bool strengthPotionOn;
     private bool hasStrengthUsed;
+
     void Awake()
     {
+        walkingPlayer = GameObject.Find("Player");
         hasStrengthUsed = false;
         FindStats();
     }
@@ -31,9 +34,9 @@ public class herocon : MonoBehaviour
 
         if (heroHP <= 0)
         {
-            Destroy(gameObject);
-            SceneManager.LoadScene("MainMenuScene");
-            heroHP = 100;
+            walkingPlayer.SetActive(true);
+            SceneManager.LoadScene("WalkingScenev4");
+                
         }
 
         if (strengthPotionOn && !hasStrengthUsed)
@@ -80,7 +83,7 @@ public class herocon : MonoBehaviour
 
     private void FindStats()
     {
-        playerStats = GameObject.Find("PlayerGM");
+        playerStats = GameObject.Find("PlayerGM(Clone)");
         heroMaxHP = playerStats.GetComponent<PlayerData>().hitPointsMax;
         heroHP = playerStats.GetComponent<PlayerData>().hitPointsCur;
         armor = playerStats.GetComponent<PlayerData>().armor;

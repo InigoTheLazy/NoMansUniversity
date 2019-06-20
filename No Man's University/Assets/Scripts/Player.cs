@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
         Scene scene = SceneManager.GetActiveScene();
         if (scene.name == "BattleScene")
         {
-            Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
         }
     }
     public void Move()
