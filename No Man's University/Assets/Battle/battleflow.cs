@@ -35,6 +35,7 @@ public class battleflow : MonoBehaviour
     {
         if (enemyDefeated == "y")
         {
+            GameObject.Find("Hero").GetComponent<herocon>().strengthPotionOn = false;
             SceneManager.LoadScene("WalkingScene");
             enemyDefeated = "n";
         }

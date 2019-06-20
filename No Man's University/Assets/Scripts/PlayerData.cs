@@ -17,18 +17,16 @@ public class PlayerData : MonoBehaviour
 
     void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
+        
     }
 
     void Update()
     {
-        hitPointsMax = 50 + (conStat * 10);
-        hitPointsCur = hitPointsMax;
+        
     }
 
     public void CreateBaseStats()
     {
-        Instantiate(this.gameObject);
         uniquePlayerName = "Filler";
         strStat = 5;
         conStat = 5;

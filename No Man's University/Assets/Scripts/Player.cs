@@ -6,25 +6,26 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     [SerializeField]
-    private float speed = 1;
+    private float speed;
     private Vector2 direction;
     private Animator animator;
     private static bool playerExists;
     public string startPoint;
-    // Start is called before the first frame update
+    float lockPos = 0;
     void Start()
     {
         animator = GetComponent<Animator>();
-        if (!playerExists )
-        {
-            playerExists = true;
-            DontDestroyOnLoad(this.transform.gameObject);
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
-        
+
+		if (!playerExists)
+		{
+			playerExists = true;
+			DontDestroyOnLoad(this.transform.gameObject);
+		}
+		else
+		{
+			Destroy(this.gameObject);
+		}
+
     }
 
     // Update is called once per frame
@@ -32,6 +33,12 @@ public class Player : MonoBehaviour
     {
         GetInput();
         Move();
+        transform.rotation = Quaternion.Euler(lockPos, lockPos, lockPos);
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name == "BattleScene")
+        {
+            Destroy(this.gameObject);
+        }
     }
     public void Move()
     {

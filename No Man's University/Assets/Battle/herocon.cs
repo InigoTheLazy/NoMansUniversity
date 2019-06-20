@@ -15,15 +15,12 @@ public class herocon : MonoBehaviour
     public Text HPText;
     public Button button1;
     public GameObject playerStats;
-
+    public bool strengthPotionOn;
+    private bool hasStrengthUsed;
     void Awake()
     {
+        hasStrengthUsed = false;
         FindStats();
-    }
-
-    void Start()
-    {
-         
     }
 
     void Update()
@@ -38,6 +35,18 @@ public class herocon : MonoBehaviour
             SceneManager.LoadScene("MainMenuScene");
             heroHP = 100;
         }
+
+        if (strengthPotionOn && !hasStrengthUsed)
+        {
+            str += 10;
+            hasStrengthUsed = true;
+        }
+
+        if (battleflow.whichturn == 2)
+        {
+            strengthPotionOn = false;
+        }
+
 
     }
 
@@ -56,6 +65,7 @@ public class herocon : MonoBehaviour
         {
             battleflow.currentDamage = 15 + (str * 5);
             GetComponent<Animator>().SetTrigger("heroAttack");
+            strengthPotionOn = false;
             StartCoroutine(turnEnd());
         }
     }
@@ -64,6 +74,7 @@ public class herocon : MonoBehaviour
     {
         battleflow.currentDamage = 50 + (str * 5);
         GetComponent<Animator>().SetTrigger("heroSkill");
+        strengthPotionOn = false;
         StartCoroutine(turnEnd());
     }
 
@@ -75,6 +86,14 @@ public class herocon : MonoBehaviour
         armor = playerStats.GetComponent<PlayerData>().armor;
         str = playerStats.GetComponent<PlayerData>().strStat;
         dex = playerStats.GetComponent<PlayerData>().dexStat;
+    }
+
+    public void AlterHP(float alterAmount)
+    {
+        if ((heroHP + alterAmount) > heroMaxHP)
+            heroHP = heroMaxHP;
+        else
+            heroHP += alterAmount;
     }
 
 }
