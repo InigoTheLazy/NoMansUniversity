@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Thrift shop.unity
     guid: 4caec4f99cf678546aa33079f00d0952
+  - enabled: 1
+    path: Assets/Scenes/BattleScene2.unity
+    guid: dedf8ff3ba8db6e4696e05cc7a27b2f6
+  - enabled: 1
+    path: Assets/Scenes/BattleScene3.unity
+    guid: 360557f10df007a4a8957642bf558fbc
   m_configObjects: {}

@@ -34,6 +34,10 @@ public class Player : MonoBehaviour
 
         if (scene.name == "BattleScene")
             this.gameObject.SetActive(false);
+        if (scene.name == "BattleScene2")
+            this.gameObject.SetActive(false);
+        if (scene.name == "BattleScene3")
+            this.gameObject.SetActive(false);
     }
     public void Move()
     {
