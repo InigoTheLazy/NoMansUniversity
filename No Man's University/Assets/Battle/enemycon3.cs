@@ -2,11 +2,11 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class enemycon : MonoBehaviour
+public class enemycon3 : MonoBehaviour
 {
-    public float enemyHP = 100;
-    public float enemyMaxHP = 100;
-    public float enemyAttPow = 50;
+    public float enemyHP = 1000;
+    public float enemyMaxHP = 1000;
+    public float enemyAttPow = 250;
     public Transform damTextObj;
     public Slider healthBar;
     public Text HPText;
@@ -41,14 +41,14 @@ public class enemycon : MonoBehaviour
             battleflow.damageDisplay = "n";
         }
 
-        if (enemyHP<=0)
+        if (enemyHP <= 0)
         {
             battleflow.enemyDefeated = "y";
-            battleflow.enemyNumber = 0;
+            battleflow.enemyNumber = 2;
             Destroy(gameObject);
         }
 
-        
+
     }
 
     IEnumerator turnEnd(float a)

@@ -1290,6 +1290,8 @@ MonoBehaviour:
   audioMixer: {fileID: 24100000, guid: 530007440e2d3c84797c3bb4caa59695, type: 2}
   musicButtonText: {fileID: 2059022795}
   soundButtonText: {fileID: 158782124}
+  playerStatsData: {fileID: 8069331446418298388, guid: 33d65f5e26b9d924da798ff275e54029,
+    type: 3}
 --- !u!222 &753536164
 CanvasRenderer:
   m_ObjectHideFlags: 0

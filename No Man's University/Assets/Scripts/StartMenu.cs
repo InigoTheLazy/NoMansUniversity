@@ -10,6 +10,7 @@ public class StartMenu : MonoBehaviour
     public AudioMixer audioMixer;
     public Text musicButtonText, soundButtonText;
     private float mutedVolume = 0;
+    public GameObject playerStatsData;
 
     void Start()
     {
@@ -18,6 +19,9 @@ public class StartMenu : MonoBehaviour
 
     public void PlayGame()
     {
+        playerStatsData.GetComponent<PlayerData>().CreateBaseStats();
+        Instantiate(playerStatsData);
+
         SceneManager.LoadScene("WalkingScene");
     }
 

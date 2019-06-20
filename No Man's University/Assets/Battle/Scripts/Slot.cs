@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class Slot : MonoBehaviour, IPointerClickHandler
+public class Slot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
 
     public GameObject item;
@@ -12,11 +12,12 @@ public class Slot : MonoBehaviour, IPointerClickHandler
     public bool empty;
     public Sprite icon;
     public Transform slotIconGO;
+    public Transform damTextObj;
+    public GameObject infoBox;
 
     public GameObject Player;
     public GameObject Enemy;
     private GameObject potionPrefab;
-
     public bool hasBeenUsed;
     public bool playersObject;
 
@@ -58,7 +59,16 @@ public class Slot : MonoBehaviour, IPointerClickHandler
 
     public void UseItem()
     {
-        item.GetComponent<Item>().ItemUsage(Player, Enemy);
+        item.GetComponent<Item>().ItemUsage(Player, Enemy, damTextObj);
     }
 
+    public void OnPointerEnter(PointerEventData pointerEventData)
+    {
+        infoBox.GetComponent<Text>().text = description;
+    }
+
+    public void OnPointerExit(PointerEventData pointerEventData)
+    {
+        infoBox.GetComponent<Text>().text = "";
+    }
 }
