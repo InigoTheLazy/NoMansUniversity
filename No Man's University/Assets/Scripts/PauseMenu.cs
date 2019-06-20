@@ -3,8 +3,14 @@
 public class PauseMenu : MonoBehaviour
 {
     public static bool gameIsPaused = false;
-    public GameObject pauseMenuCanvas;
-    
+    public GameObject pauseMenu, startMenu, options, about;
+
+    void Start()
+    {
+        gameIsPaused = false;
+        Time.timeScale = 1f;
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -20,13 +26,20 @@ public class PauseMenu : MonoBehaviour
     {
         gameIsPaused = false;
         Time.timeScale = 1f;
-        pauseMenuCanvas.SetActive(false);
+        pauseMenu.SetActive(false);
     }
 
     void Pause()
     {
         gameIsPaused = true;
         Time.timeScale = 0f;
-        pauseMenuCanvas.SetActive(true);
+        pauseMenu.SetActive(true);
+
+        if (startMenu.active != true)
+            startMenu.SetActive(true);
+        if (options.active != false)
+            options.SetActive(false);
+        if (about.active != false)
+            about.SetActive(false);
     }
 }

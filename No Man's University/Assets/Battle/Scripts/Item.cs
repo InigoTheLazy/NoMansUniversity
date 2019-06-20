@@ -13,16 +13,6 @@ public class Item : MonoBehaviour
     [HideInInspector]
     public GameObject weapon;
 
-    public bool playersObject;
-
-    public void Start()
-    {
-        if (!playersObject)
-        {
-            
-        }
-    }
-
     public void Update()
     {
         if (equipped)
@@ -31,7 +21,7 @@ public class Item : MonoBehaviour
         }
     }
 
-    public void ItemUsage()
+    public void ItemUsage(GameObject player, GameObject enemy)
     {
         if (type == "weapon")
         {
@@ -40,9 +30,28 @@ public class Item : MonoBehaviour
 
         else if (type == "potion")
         {
+            Debug.Log(ID);
             equipped = false;
+            switch (ID)
+            {
+                case 1:
+                     player.gameObject.GetComponent<herocon>().AlterHP(50);
+                     break;
+                case 2:
+                    player.gameObject.GetComponent<herocon>().AlterHP(200);
+                    break;
+                case 3:
+                    player.gameObject.GetComponent<herocon>().strengthPotionOn = true;
+                    break;
+                case 4:
+                    enemy.gameObject.GetComponent<enemycon>().enemyHP -= 100f;
+                    break;
+                case 5:
+                    player.gameObject.GetComponent<herocon>().AlterHP(player.gameObject.GetComponent<herocon>().heroMaxHP);
+                    break;
+                case 6:
+                    break;
+            }
         }
-
-
     }
 }

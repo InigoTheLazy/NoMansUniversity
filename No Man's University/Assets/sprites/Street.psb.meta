@@ -1,0 +1,850 @@
+fileFormatVersion: 2
+guid: 61fcbcd2e4dc7b34a94fafa12085b666
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: base sidewalk_GO/base sidewalk_GO
+    100002: base sidewalk_GO/base sidewalk_GO/ UNI
+    100004: base sidewalk_GO/base sidewalk_GO/420
+    100006: base sidewalk_GO/base sidewalk_GO/base sidewalk
+    100008: base sidewalk_GO/base sidewalk_GO/building
+    100010: base sidewalk_GO/base sidewalk_GO/bushes
+    100012: base sidewalk_GO/base sidewalk_GO/door1
+    100014: base sidewalk_GO/base sidewalk_GO/door1_1
+    100016: base sidewalk_GO/base sidewalk_GO/door1_2
+    100018: base sidewalk_GO/base sidewalk_GO/dorms
+    100020: base sidewalk_GO/base sidewalk_GO/grass
+    100022: base sidewalk_GO/base sidewalk_GO/Layer 2
+    100024: base sidewalk_GO/base sidewalk_GO/medis
+    100026: base sidewalk_GO/base sidewalk_GO/medis2
+    100028: base sidewalk_GO/base sidewalk_GO/medis3
+    100030: base sidewalk_GO/base sidewalk_GO/pathway
+    100032: base sidewalk_GO/base sidewalk_GO/Rectangle 2
+    100034: base sidewalk_GO/base sidewalk_GO/shop
+    100036: base sidewalk_GO/base sidewalk_GO/UNI
+    100038: base sidewalk_GO/base sidewalk_GO/window
+    100040: base sidewalk_GO/base sidewalk_GO/window_1
+    100042: base sidewalk_GO/base sidewalk_GO/window_2
+    100044: base sidewalk_GO/base sidewalk_GO/window_3
+    400000: base sidewalk_GO/base sidewalk_GO/Transform
+    400002: base sidewalk_GO/base sidewalk_GO/ UNI/Transform
+    400004: base sidewalk_GO/base sidewalk_GO/420/Transform
+    400006: base sidewalk_GO/base sidewalk_GO/base sidewalk/Transform
+    400008: base sidewalk_GO/base sidewalk_GO/building/Transform
+    400010: base sidewalk_GO/base sidewalk_GO/bushes/Transform
+    400012: base sidewalk_GO/base sidewalk_GO/door1/Transform
+    400014: base sidewalk_GO/base sidewalk_GO/door1_1/Transform
+    400016: base sidewalk_GO/base sidewalk_GO/door1_2/Transform
+    400018: base sidewalk_GO/base sidewalk_GO/dorms/Transform
+    400020: base sidewalk_GO/base sidewalk_GO/grass/Transform
+    400022: base sidewalk_GO/base sidewalk_GO/Layer 2/Transform
+    400024: base sidewalk_GO/base sidewalk_GO/medis/Transform
+    400026: base sidewalk_GO/base sidewalk_GO/medis2/Transform
+    400028: base sidewalk_GO/base sidewalk_GO/medis3/Transform
+    400030: base sidewalk_GO/base sidewalk_GO/pathway/Transform
+    400032: base sidewalk_GO/base sidewalk_GO/Rectangle 2/Transform
+    400034: base sidewalk_GO/base sidewalk_GO/shop/Transform
+    400036: base sidewalk_GO/base sidewalk_GO/UNI/Transform
+    400038: base sidewalk_GO/base sidewalk_GO/window/Transform
+    400040: base sidewalk_GO/base sidewalk_GO/window_1/Transform
+    400042: base sidewalk_GO/base sidewalk_GO/window_2/Transform
+    400044: base sidewalk_GO/base sidewalk_GO/window_3/Transform
+    2800000: Street
+    21200000: base sidewalk_GO/base sidewalk_GO/ UNI/SpriteRenderer
+    21200002: base sidewalk_GO/base sidewalk_GO/420/SpriteRenderer
+    21200004: base sidewalk_GO/base sidewalk_GO/base sidewalk/SpriteRenderer
+    21200006: base sidewalk_GO/base sidewalk_GO/building/SpriteRenderer
+    21200008: base sidewalk_GO/base sidewalk_GO/bushes/SpriteRenderer
+    21200010: base sidewalk_GO/base sidewalk_GO/door1/SpriteRenderer
+    21200012: base sidewalk_GO/base sidewalk_GO/door1_1/SpriteRenderer
+    21200014: base sidewalk_GO/base sidewalk_GO/door1_2/SpriteRenderer
+    21200016: base sidewalk_GO/base sidewalk_GO/dorms/SpriteRenderer
+    21200018: base sidewalk_GO/base sidewalk_GO/grass/SpriteRenderer
+    21200020: base sidewalk_GO/base sidewalk_GO/Layer 2/SpriteRenderer
+    21200022: base sidewalk_GO/base sidewalk_GO/medis/SpriteRenderer
+    21200024: base sidewalk_GO/base sidewalk_GO/medis2/SpriteRenderer
+    21200026: base sidewalk_GO/base sidewalk_GO/medis3/SpriteRenderer
+    21200028: base sidewalk_GO/base sidewalk_GO/pathway/SpriteRenderer
+    21200030: base sidewalk_GO/base sidewalk_GO/Rectangle 2/SpriteRenderer
+    21200032: base sidewalk_GO/base sidewalk_GO/shop/SpriteRenderer
+    21200034: base sidewalk_GO/base sidewalk_GO/UNI/SpriteRenderer
+    21200036: base sidewalk_GO/base sidewalk_GO/window/SpriteRenderer
+    21200038: base sidewalk_GO/base sidewalk_GO/window_1/SpriteRenderer
+    21200040: base sidewalk_GO/base sidewalk_GO/window_2/SpriteRenderer
+    21200042: base sidewalk_GO/base sidewalk_GO/window_3/SpriteRenderer
+    21300000: medis2
+    21300002: medis3
+    21300004: medis
+    21300006: shop
+    21300008: door1
+    21300010: building
+    21300012: pathway
+    21300014: ' UNI'
+    21300016: 420
+    21300018: Rectangle 2
+    21300020: door1_1
+    21300022: UNI
+    21300024: window
+    21300026: window_1
+    21300028: window_2
+    21300030: window_3
+    21300032: door1_2
+    21300034: dorms
+    21300036: bushes
+    21300038: grass
+    21300040: Layer 2
+    21300042: base sidewalk
+    100100000: base sidewalk_GO
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: medis2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 15167
+      y: 715
+      width: 822
+      height: 582
+    spriteID: 8e5f31da0aabd74418f014a661dd8119
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 9042, y: 297}
+  - name: medis3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1388
+      width: 703
+      height: 631
+    spriteID: 2c08637d13cbaa749a44a636ecbf1d3e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -3042, y: 1019}
+  - name: medis
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 14323
+      y: 715
+      width: 836
+      height: 607
+    spriteID: ea05e7eda87817442afea3d9a07f4715
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 10642, y: 322}
+  - name: shop
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 10529
+      y: 1254
+      width: 352
+      height: 92
+    spriteID: be94825c67c2cbf44b264b3c20001057
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 5785, y: 576}
+  - name: door1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 15997
+      y: 715
+      width: 222
+      height: 363
+    spriteID: 92c1cd6bf392dcf4c86c320aebba45a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 10582, y: 223}
+  - name: building
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9120
+      y: 715
+      width: 1401
+      height: 505
+    spriteID: 89112bb2c791bf445a6d1e82e4498a85
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4678, y: 220}
+  - name: pathway
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 12492
+      y: 885
+      width: 219
+      height: 154
+    spriteID: e04aca6692be3b64a88391bf62d5b729
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 7075, y: 544}
+  - name: ' UNI'
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 15997
+      y: 1323
+      width: 104
+      height: 43
+    spriteID: e87f74147d594ca488e98988f01ca0c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 8621, y: 722}
+  - name: 420
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 10889
+      y: 1254
+      width: 41
+      height: 17
+    spriteID: 5188ed0f020b86a4181a3b2780bcb5ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3532, y: 705}
+  - name: Rectangle 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 12282
+      y: 885
+      width: 202
+      height: 202
+    spriteID: 60779f61124b8d147834dd1fdb4374fc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4949, y: 358}
+  - name: door1_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 10529
+      y: 885
+      width: 441
+      height: 361
+    spriteID: 6d0d3e51f09fb0546868100a2affb987
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2447, y: 538}
+  - name: UNI
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7152
+      y: 715
+      width: 1960
+      height: 653
+    spriteID: f6fd60838a094be46a7e56184b229ba6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 112, y: 368}
+  - name: window
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 15997
+      y: 1086
+      width: 277
+      height: 229
+    spriteID: 3ca81ab49000a774380644a8a2c91fbc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 13455, y: 559}
+  - name: window_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11427
+      y: 885
+      width: 277
+      height: 229
+    spriteID: 424776f53184bc94ea40e29393275a1a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 9439, y: 358}
+  - name: window_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11712
+      y: 885
+      width: 277
+      height: 229
+    spriteID: 38ab2c7287bf240449e1a2cb1574959b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 10278, y: 358}
+  - name: window_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11997
+      y: 885
+      width: 277
+      height: 229
+    spriteID: 5b13da37d55806046bf9cc97cac31a4e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 11847, y: 358}
+  - name: door1_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 10978
+      y: 885
+      width: 441
+      height: 361
+    spriteID: 6ca78ddeeea91c547beb49b1b1a67163
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 10268, y: 538}
+  - name: dorms
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 715
+      width: 3256
+      height: 665
+    spriteID: ad1e45b39e2791a4096b577a46a5d92b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 380}
+  - name: bushes
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3268
+      y: 715
+      width: 3876
+      height: 505
+    spriteID: 812ae0c59c5dd9c45819d3b9f3279082
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 44, y: 220}
+  - name: grass
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 10529
+      y: 715
+      width: 3786
+      height: 162
+    spriteID: b630dfa125afd154f955901eb38f11ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 7274, y: 381}
+  - name: Layer 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 360
+      width: 8966
+      height: 347
+    spriteID: 3b5f5750a4d0be4478bd1800a9459517
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -30, y: 360}
+  - name: base sidewalk
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 9000
+      height: 348
+    spriteID: 1243f643b6531f04d9350a109e56e690
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 2048
+  importedTextureHeight: 2048
+  documentSize: {x: 9000, y: 1000}
+  textureActualWidth: 16384
+  textureActualHeight: 16384
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: medis2
+    spriteName: medis2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8e5f31da0aabd74418f014a661dd8119
+    layerID: 118
+    mosaicPosition: {x: 15167, y: 715}
+  - name: medis3
+    spriteName: medis3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2c08637d13cbaa749a44a636ecbf1d3e
+    layerID: 119
+    mosaicPosition: {x: 4, y: 1388}
+  - name: medis
+    spriteName: medis
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ea05e7eda87817442afea3d9a07f4715
+    layerID: 80
+    mosaicPosition: {x: 14323, y: 715}
+  - name: shop
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 105
+    mosaicPosition: {x: 0, y: 0}
+  - name: shop
+    spriteName: shop
+    isGroup: 0
+    parentIndex: 3
+    spriteID: be94825c67c2cbf44b264b3c20001057
+    layerID: 104
+    mosaicPosition: {x: 10529, y: 1254}
+  - name: door1
+    spriteName: door1
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 92c1cd6bf392dcf4c86c320aebba45a2
+    layerID: 100
+    mosaicPosition: {x: 15997, y: 715}
+  - name: building
+    spriteName: building
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 89112bb2c791bf445a6d1e82e4498a85
+    layerID: 99
+    mosaicPosition: {x: 9120, y: 715}
+  - name: pathway
+    spriteName: pathway
+    isGroup: 0
+    parentIndex: 3
+    spriteID: e04aca6692be3b64a88391bf62d5b729
+    layerID: 109
+    mosaicPosition: {x: 12492, y: 885}
+  - name: UNI
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 41
+    mosaicPosition: {x: 0, y: 0}
+  - name: logo
+    spriteName: 
+    isGroup: 1
+    parentIndex: 8
+    spriteID: 00000000000000000000000000000000
+    layerID: 66
+    mosaicPosition: {x: 0, y: 0}
+  - name: ' UNI'
+    spriteName: ' UNI'
+    isGroup: 0
+    parentIndex: 9
+    spriteID: e87f74147d594ca488e98988f01ca0c3
+    layerID: 61
+    mosaicPosition: {x: 15997, y: 1323}
+  - name: 420
+    spriteName: 420
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 5188ed0f020b86a4181a3b2780bcb5ef
+    layerID: 65
+    mosaicPosition: {x: 10889, y: 1254}
+  - name: Rectangle 2
+    spriteName: Rectangle 2
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 60779f61124b8d147834dd1fdb4374fc
+    layerID: 46
+    mosaicPosition: {x: 12282, y: 885}
+  - name: door1
+    spriteName: door1_1
+    isGroup: 0
+    parentIndex: 8
+    spriteID: 6d0d3e51f09fb0546868100a2affb987
+    layerID: 43
+    mosaicPosition: {x: 10529, y: 885}
+  - name: UNI
+    spriteName: UNI
+    isGroup: 0
+    parentIndex: 8
+    spriteID: f6fd60838a094be46a7e56184b229ba6
+    layerID: 40
+    mosaicPosition: {x: 7152, y: 715}
+  - name: dorms
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 37
+    mosaicPosition: {x: 0, y: 0}
+  - name: window
+    spriteName: window
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 3ca81ab49000a774380644a8a2c91fbc
+    layerID: 35
+    mosaicPosition: {x: 15997, y: 1086}
+  - name: window
+    spriteName: window_1
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 424776f53184bc94ea40e29393275a1a
+    layerID: 32
+    mosaicPosition: {x: 11427, y: 885}
+  - name: window
+    spriteName: window_2
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 38ab2c7287bf240449e1a2cb1574959b
+    layerID: 31
+    mosaicPosition: {x: 11712, y: 885}
+  - name: window
+    spriteName: window_3
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 5b13da37d55806046bf9cc97cac31a4e
+    layerID: 36
+    mosaicPosition: {x: 11997, y: 885}
+  - name: door1
+    spriteName: door1_2
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 6ca78ddeeea91c547beb49b1b1a67163
+    layerID: 20
+    mosaicPosition: {x: 10978, y: 885}
+  - name: dorms
+    spriteName: dorms
+    isGroup: 0
+    parentIndex: 15
+    spriteID: ad1e45b39e2791a4096b577a46a5d92b
+    layerID: 12
+    mosaicPosition: {x: 4, y: 715}
+  - name: bushes
+    spriteName: bushes
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 812ae0c59c5dd9c45819d3b9f3279082
+    layerID: 114
+    mosaicPosition: {x: 3268, y: 715}
+  - name: grass
+    spriteName: grass
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b630dfa125afd154f955901eb38f11ca
+    layerID: 110
+    mosaicPosition: {x: 10529, y: 715}
+  - name: sidewalk
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 89
+    mosaicPosition: {x: 0, y: 0}
+  - name: Layer 2
+    spriteName: Layer 2
+    isGroup: 0
+    parentIndex: 24
+    spriteID: 3b5f5750a4d0be4478bd1800a9459517
+    layerID: 93
+    mosaicPosition: {x: 4, y: 360}
+  - name: base sidewalk
+    spriteName: base sidewalk
+    isGroup: 0
+    parentIndex: 24
+    spriteID: 1243f643b6531f04d9350a109e56e690
+    layerID: 94
+    mosaicPosition: {x: 4, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+  boneGOs: []
+  generateGOHierarchy: 0
