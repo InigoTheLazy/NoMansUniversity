@@ -1412,8 +1412,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e57aa48dab60344abde9ee103bfe82f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseMenuCanvas: {fileID: 578024359}
   selectGame: {fileID: 1873559265}
-  pauseMenu: {fileID: 578024359}
   options: {fileID: 460110600}
 --- !u!1 &1212056171
 GameObject:

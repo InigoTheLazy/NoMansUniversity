@@ -150,7 +150,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -249.99976, y: -996.9999}
+  m_AnchoredPosition: {x: -249.99951, y: -996.9999}
   m_SizeDelta: {x: 500, y: 150}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &73796651
@@ -1766,7 +1766,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 753536163}
+      - m_Target: {fileID: 1840408689}
         m_MethodName: ToggleSound
         m_Mode: 1
         m_Arguments:
@@ -1947,7 +1947,8 @@ AudioSource:
   m_GameObject: {fileID: 753536156}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: fd8ea3e8cd24a4c4ba1f0732312727be,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -2046,9 +2047,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b7bc82e2899c2d4f9744c3725b80273, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 0}
-  musicButtonText: {fileID: 0}
-  soundButtonText: {fileID: 0}
 --- !u!222 &753536164
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2495,7 +2493,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 753536163}
+      - m_Target: {fileID: 1840408689}
         m_MethodName: SetVolume
         m_Mode: 0
         m_Arguments:
@@ -2851,7 +2849,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -249.99976, y: -475}
+  m_AnchoredPosition: {x: -249.99951, y: -475}
   m_SizeDelta: {x: 500, y: 150}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1217839378
@@ -3392,7 +3390,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -249.99976, y: -625}
+  m_AnchoredPosition: {x: -249.99951, y: -625}
   m_SizeDelta: {x: 500, y: 150}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1301640805
@@ -4174,7 +4172,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -249.99976, y: -775}
+  m_AnchoredPosition: {x: -249.99951, y: -775}
   m_SizeDelta: {x: 500, y: 150}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1579675489
@@ -4531,7 +4529,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -249.99976, y: -996.9999}
+  m_AnchoredPosition: {x: -249.99951, y: -996.9999}
   m_SizeDelta: {x: 500, y: 150}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1721831680
@@ -4879,7 +4877,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 753536163}
+      - m_Target: {fileID: 1840408689}
         m_MethodName: ToggleMusic
         m_Mode: 1
         m_Arguments:
@@ -5096,6 +5094,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1840408688}
+  - component: {fileID: 1840408689}
   m_Layer: 5
   m_Name: Options
   m_TagString: Untagged
@@ -5129,6 +5128,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 1, y: 1}
+--- !u!114 &1840408689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840408687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f0ba968423ac3c499f63d9e7bd36e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: fd8ea3e8cd24a4c4ba1f0732312727be, type: 2}
+  volumeSlider: {fileID: 920267235}
+  musicButtonText: {fileID: 2059022795}
+  soundButtonText: {fileID: 158782124}
 --- !u!1 &1868040153
 GameObject:
   m_ObjectHideFlags: 0
@@ -5781,7 +5796,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -249.99976, y: -475}
+  m_AnchoredPosition: {x: -249.99951, y: -475}
   m_SizeDelta: {x: 500, y: 150}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &2077163176
