@@ -593,8 +593,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 86843824}
   m_LocalRotation: {x: 0.0148820225, y: -0.004865012, z: 0.70921475, w: 0.7048187}
-  m_LocalPosition: {x: 8.72, y: -2.88, z: -0.41}
-  m_LocalScale: {x: 6.174153, y: 1.9773601, z: 1.2840002}
+  m_LocalPosition: {x: 9.14, y: -2.88, z: -0.41}
+  m_LocalScale: {x: 24.66, y: 2.27, z: 1.2840002}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -931,8 +931,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 176451246}
   m_LocalRotation: {x: 0.0069912113, y: -0.014009492, z: -0.003460269, w: 0.99987143}
-  m_LocalPosition: {x: 1.73, y: 0.35, z: 0.25}
-  m_LocalScale: {x: 20.931004, y: 1.54, z: 1}
+  m_LocalPosition: {x: 1.73, y: 0.62, z: 0.25}
+  m_LocalScale: {x: 20.931004, y: 3.07, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -2418,7 +2418,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e57aa48dab60344abde9ee103bfe82f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuCanvas: {fileID: 1716656113}
+  pauseMenu: {fileID: 0}
+  startMenu: {fileID: 0}
+  options: {fileID: 0}
+  about: {fileID: 0}
 --- !u!114 &691043553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4233,13 +4236,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227607260}
-  m_LocalRotation: {x: 0.0069912113, y: -0.014009492, z: -0.003460269, w: 0.99987143}
-  m_LocalPosition: {x: -0.05, y: -5.29, z: 0.12}
-  m_LocalScale: {x: 27.450497, y: 1.54, z: 1}
+  m_LocalRotation: {x: 0.00702058, y: -0.021265985, z: -0.0034116404, w: 0.9997434}
+  m_LocalPosition: {x: -0.05, y: -5.02, z: 0.12}
+  m_LocalScale: {x: 27.450497, y: 3.57, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0.79600006, y: -1.608, z: -0.40800002}
+  m_LocalEulerAnglesHint: {x: 0.79600006, y: -2.44, z: -0.40800002}
 --- !u!1 &1266775086
 GameObject:
   m_ObjectHideFlags: 0
@@ -6065,9 +6068,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92817697c68ac2940b021202d9d9af56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resolutionLabel: {fileID: 1754334273}
-  graphicsLabel: {fileID: 550260179}
-  fullscreenLabel: {fileID: 265814761}
 --- !u!1 &1750649021
 GameObject:
   m_ObjectHideFlags: 0
@@ -6643,6 +6643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbcc2af8a6d997a42b6343faa38f3bdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startPoint: 
   exitPoint: Test House Out
   levelName: WalkingScenev3
 --- !u!61 &1947713875
@@ -7106,7 +7107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc39358833b14234eb3712589700eba0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerStatsData: {fileID: 0}
 --- !u!224 &2085955270
 RectTransform:
   m_ObjectHideFlags: 0
