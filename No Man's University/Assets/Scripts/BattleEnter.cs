@@ -33,7 +33,8 @@ public class BattleEnter : MonoBehaviour
         if (other.gameObject.name == "Player")
         {
             playerinzone = false;
-            dMAn.DisableBox();
+            if (dMAn != null)
+                dMAn.DisableBox();
         }
     }
     void OnTriggerStay2D(Collider2D other)

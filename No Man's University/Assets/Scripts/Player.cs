@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
@@ -12,6 +10,7 @@ public class Player : MonoBehaviour
     private static bool playerExists;
     public string startPoint;
     float lockPos = 0;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -22,35 +21,28 @@ public class Player : MonoBehaviour
 			DontDestroyOnLoad(this.transform.gameObject);
 		}
 		else
-		{
-			Destroy(this.gameObject);
-		}
+		    Destroy(this.gameObject);
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         GetInput();
         Move();
         transform.rotation = Quaternion.Euler(lockPos, lockPos, lockPos);
         Scene scene = SceneManager.GetActiveScene();
+
         if (scene.name == "BattleScene")
-        {
             this.gameObject.SetActive(false);
-        }
     }
     public void Move()
     {
-        transform.Translate(direction*speed*Time.deltaTime);
+        transform.Translate(direction * speed * Time.deltaTime);
+
         if(direction.x != 0 || direction.y != 0)
-        {
             AnimateMovement(direction);
-        }
         else
-        {
             animator.SetLayerWeight(1, 0);
-        }
         
     }
     private void GetInput()
@@ -58,30 +50,19 @@ public class Player : MonoBehaviour
         direction = Vector2.zero;
 
         if(Input.GetKey(KeyCode.W))
-        {
             direction += Vector2.up;
-        }
         if (Input.GetKey(KeyCode.A))
-        {
             direction += Vector2.left;
-        }
         if (Input.GetKey(KeyCode.S))
-        {
             direction += Vector2.down;
-        }
         if (Input.GetKey(KeyCode.D))
-        {
             direction += Vector2.right;
-        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name == "Door")
-        {
             SceneManager.LoadScene("BattleScene");
-            
-        }
 
     }
     public void AnimateMovement(Vector2 direction)
