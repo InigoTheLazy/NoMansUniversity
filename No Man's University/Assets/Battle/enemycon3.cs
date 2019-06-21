@@ -55,7 +55,8 @@ public class enemycon3 : MonoBehaviour
     {
         battleflow.whichturn = 0;
         yield return new WaitForSeconds(4);
-        battleflow.currentDamage = enemyAttPow * battleflow.damageMultiplier * a;
+        float b = (1 - (battleflow.armor / 200));
+        battleflow.currentDamage = Mathf.Ceil(enemyAttPow * battleflow.damageMultiplier * a * b);
         herocon.heroHP -= battleflow.currentDamage;
         Instantiate(damTextObj, new Vector2(-6f, 4.95f), damTextObj.rotation);
     }

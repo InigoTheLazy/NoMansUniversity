@@ -10,6 +10,7 @@ public class battleflow : MonoBehaviour
     public static string damageDisplay = "n";
     public static string enemyDefeated = "n";
     public static int enemyNumber = 0;
+    public static float armor;
 
     public GameObject combatChoiceBox;
     public GameObject cursor;
@@ -33,6 +34,7 @@ public class battleflow : MonoBehaviour
     void Start()
     {
         playerStats = GameObject.Find("PlayerGM(Clone)");
+        armor = playerStats.GetComponent<PlayerData>().armor;
         walkingPlayer = GameObject.Find("Player");
         initiateDeflect = true;
     }
