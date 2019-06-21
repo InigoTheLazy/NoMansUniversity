@@ -10,7 +10,6 @@ public class enemycon : MonoBehaviour
     public Transform damTextObj;
     public Slider healthBar;
     public Text HPText;
-    public int damageMultiplier = 0;
 
     void Update()
     {
@@ -20,8 +19,19 @@ public class enemycon : MonoBehaviour
 
         if (battleflow.whichturn == 2)
         {
-            GetComponent<Animator>().SetTrigger("enemyAttack");
-            StartCoroutine(turnEnd());
+            float a = 1;
+            int randomNumber = Random.Range(0, 1);
+            switch (randomNumber)
+            {
+                case 0:
+                    GetComponent<Animator>().SetTrigger("enemyAttack");
+                    break;
+                case 1:
+                    GetComponent<Animator>().SetTrigger("enemyAttack2");
+                    a = 1.5f;
+                    break;
+            }
+            StartCoroutine(turnEnd(a));
             Invoke("EnemyTurnEnd", 3);
         }
 
@@ -34,17 +44,19 @@ public class enemycon : MonoBehaviour
         if (enemyHP<=0)
         {
             battleflow.enemyDefeated = "y";
+            battleflow.enemyNumber = 0;
             Destroy(gameObject);
         }
 
         
     }
 
-    IEnumerator turnEnd()
+    IEnumerator turnEnd(float a)
     {
         battleflow.whichturn = 0;
         yield return new WaitForSeconds(4);
-        battleflow.currentDamage = 50 - damageMultiplier;
+        float b = (1 - (battleflow.armor / 200));
+        battleflow.currentDamage = Mathf.Ceil(enemyAttPow * battleflow.damageMultiplier * a * b);
         herocon.heroHP -= battleflow.currentDamage;
         Instantiate(damTextObj, new Vector2(-6f, 4.95f), damTextObj.rotation);
     }

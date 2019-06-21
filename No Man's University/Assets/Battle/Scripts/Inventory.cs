@@ -9,6 +9,7 @@ public class Inventory : MonoBehaviour
     private int enabledSlots;
     private GameObject[] slot;
 
+    public GameObject itemInfo;
     public GameObject slotHolder;
 
     void Start()
@@ -34,6 +35,7 @@ public class Inventory : MonoBehaviour
         {
             this.gameObject.GetComponent<battleflow>().ShowPanel(false);
             InventoryPanel.SetActive(true);
+            itemInfo.SetActive(true);
         }
 
         if (!inventoryEnabled)
@@ -41,6 +43,7 @@ public class Inventory : MonoBehaviour
             this.gameObject.GetComponent<battleflow>().ShowPanel(true);
 
             InventoryPanel.SetActive(false);
+            itemInfo.SetActive(false);
         }
     }
 

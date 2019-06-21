@@ -7,11 +7,21 @@ public class Item : MonoBehaviour
     public string description;
     public Sprite icon;
     public bool pickedUp;
+    public GameObject BGM;
+    private GameObject PlayerGO;
+    
 
     [HideInInspector]
     public bool equipped;
     [HideInInspector]
     public GameObject weapon;
+    
+
+    public Component enemyconScript;
+
+    void Start()
+    {
+    }
 
     public void Update()
     {
@@ -21,8 +31,9 @@ public class Item : MonoBehaviour
         }
     }
 
-    public void ItemUsage(GameObject player, GameObject enemy)
+    public void ItemUsage(GameObject player, GameObject enemy, Transform damTextObj)
     {
+        PlayerGO = player;
         if (type == "weapon")
         {
             equipped = true;
@@ -30,7 +41,6 @@ public class Item : MonoBehaviour
 
         else if (type == "potion")
         {
-            Debug.Log(ID);
             equipped = false;
             switch (ID)
             {
@@ -44,14 +54,25 @@ public class Item : MonoBehaviour
                     player.gameObject.GetComponent<herocon>().strengthPotionOn = true;
                     break;
                 case 4:
-                    enemy.gameObject.GetComponent<enemycon>().enemyHP -= 100f;
+                    battleflow.currentDamage = 100;
+                    Instantiate(damTextObj, new Vector2(5.85f, 4.95f), damTextObj.rotation);
+                    battleflow.damageDisplay = "y";
                     break;
                 case 5:
-                    player.gameObject.GetComponent<herocon>().AlterHP(player.gameObject.GetComponent<herocon>().heroMaxHP);
+                    BGM = GameObject.Find("Battle_Game_Master");
+                    BGM.gameObject.GetComponent<BattleVideos>().PlayVideo("Assets/Battle/Videos/makumba_death.mp4", 6);
+                    Invoke("Die", 6);
                     break;
                 case 6:
+                    BGM = GameObject.Find("Battle_Game_Master");
+                    BGM.gameObject.GetComponent<BattleVideos>().PlayVideo("Assets/Battle/Videos/potion_empty.mp4", 6);
                     break;
             }
         }
+    }
+
+    private void Die()
+    {
+        PlayerGO.gameObject.GetComponent<herocon>().AlterHP(-PlayerGO.gameObject.GetComponent<herocon>().heroMaxHP);
     }
 }

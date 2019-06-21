@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,14 +12,18 @@ public class StatsTextScript : MonoBehaviour
     public int str;
     public int dex;
     public int con;
+    public int gold;
+    public int experience;
 
     public GameObject playerStats;
-    public Text strStat;
-    public Text consStat;
-    public Text dexStat;
-    public Text armorStat;
-    public Text hpStat;
-    public Text maxhpStat;
+    public TextMeshProUGUI strStat;
+    public TextMeshProUGUI consStat;
+    public TextMeshProUGUI dexStat;
+    public TextMeshProUGUI armorStat;
+    public TextMeshProUGUI hpStat;
+    public TextMeshProUGUI maxhpStat;
+    public TextMeshProUGUI goldStat;
+    public TextMeshProUGUI experienceStat;
 
     void Start()
     {
@@ -33,6 +38,8 @@ public class StatsTextScript : MonoBehaviour
         armorStat.text = armor.ToString();
         hpStat.text = heroHP.ToString();
         maxhpStat.text = heroMaxHP.ToString();
+        goldStat.text = gold.ToString();
+        experienceStat.text = experience.ToString();
     }
 
     private void FindStats()
@@ -44,23 +51,38 @@ public class StatsTextScript : MonoBehaviour
         str = playerStats.GetComponent<PlayerData>().strStat;
         dex = playerStats.GetComponent<PlayerData>().dexStat;
         con = playerStats.GetComponent<PlayerData>().conStat;
+        gold = playerStats.GetComponent<PlayerData>().coins;
+        experience = playerStats.GetComponent<PlayerData>().experience;
     }
 
     public void IncreaseStrength()
     {
-        playerStats.GetComponent<PlayerData>().strStat++;
-        FindStats();
+        if (playerStats.GetComponent<PlayerData>().experience >= 100)
+        {
+            playerStats.GetComponent<PlayerData>().strStat++;
+            playerStats.GetComponent<PlayerData>().experience -= 100;
+            FindStats();
+        }
     }
+
 
     public void IncreaseDexterity()
     {
-        playerStats.GetComponent<PlayerData>().dexStat++;
-        FindStats();
+        if (playerStats.GetComponent<PlayerData>().experience >= 100)
+        {
+            playerStats.GetComponent<PlayerData>().dexStat++;
+            playerStats.GetComponent<PlayerData>().experience -= 100;
+            FindStats();
+        }
     }
 
     public void IncreaseConstitution()
     {
-        playerStats.GetComponent<PlayerData>().conStat++;
-        FindStats();
+        if (playerStats.GetComponent<PlayerData>().experience >= 100)
+        {
+            playerStats.GetComponent<PlayerData>().conStat++;
+            playerStats.GetComponent<PlayerData>().experience -= 100;
+            FindStats();
+        }
     }
 }
