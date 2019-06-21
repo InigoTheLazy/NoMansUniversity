@@ -41,24 +41,29 @@ public class battleflow : MonoBehaviour
     {
         if (enemyDefeated == "y")
         {
+            string scene = "";
             GameObject.Find("generic_character_1 Variant").GetComponent<herocon>().strengthPotionOn = false;
             switch (enemyNumber)
             {
                 case 0:
                     playerStats.GetComponent<PlayerData>().coins += 10;
                     playerStats.GetComponent<PlayerData>().experience += 100;
+                    scene = "WalkingScenev2";
                     break;
                 case 1:
                     playerStats.GetComponent<PlayerData>().coins += 50;
                     playerStats.GetComponent<PlayerData>().experience += 250;
+                    scene = "WalkingScenev4";
                     break;
                 case 2:
                     playerStats.GetComponent<PlayerData>().coins += 250;
                     playerStats.GetComponent<PlayerData>().experience += 1000;
+                    scene = "WalkingScenev4";
                     break;
 
             }
-            SceneManager.LoadScene("WalkingScenev4");
+            SceneManager.LoadScene(scene);
+            
             enemyDefeated = "n";
             whichturn = 1;
             walkingPlayer.SetActive(true);
@@ -142,7 +147,7 @@ public class battleflow : MonoBehaviour
 
     private void Run2()
     {
-        SceneManager.LoadScene("WalkingScenev4");
+        SceneManager.LoadScene("WalkingScenev3");
         walkingPlayer.SetActive(true);
     }
 

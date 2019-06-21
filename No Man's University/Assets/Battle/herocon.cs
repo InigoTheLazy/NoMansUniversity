@@ -35,7 +35,7 @@ public class herocon : MonoBehaviour
         if (heroHP <= 0)
         {
             walkingPlayer.SetActive(true);
-            SceneManager.LoadScene("WalkingScenev4");
+            SceneManager.LoadScene("WalkingScenev1");
                 
         }
 

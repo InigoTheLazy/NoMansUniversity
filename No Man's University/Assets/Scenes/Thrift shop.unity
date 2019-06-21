@@ -250,7 +250,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6015e7b4f5919b84f8f22ad668448dbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: Purple potion of stealth
+  dialogue: Strength Potion. +10 STR for one turn. (200 Gold)
+  price: 200
+  slot: 3
+  playerStats: {fileID: 0}
 --- !u!58 &305290389
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -280,6 +283,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: Blue potion of Intelligence.
+  price: 0
+  slot: 0
+  playerStats: {fileID: 0}
 --- !u!212 &305290391
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -453,7 +459,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6015e7b4f5919b84f8f22ad668448dbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: Brown potion of poisoning
+  dialogue: Big Health Potion. Heals 100 HP. (100 Gold)
+  price: 100
+  slot: 2
+  playerStats: {fileID: 0}
 --- !u!58 &521255945
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -483,6 +492,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: Blue potion of Intelligence.
+  price: 0
+  slot: 0
+  playerStats: {fileID: 0}
 --- !u!212 &521255947
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -879,7 +891,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6015e7b4f5919b84f8f22ad668448dbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: Green potion of bravery
+  dialogue: Makumba. Effect unknown. (500 Gold)
+  price: 500
+  slot: 5
+  playerStats: {fileID: 0}
 --- !u!58 &1032491112
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -909,6 +924,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: Blue potion of Intelligence.
+  price: 0
+  slot: 0
+  playerStats: {fileID: 0}
 --- !u!212 &1032491114
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1004,6 +1022,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: Blue potion of Intelligence.
+  price: 0
+  slot: 0
+  playerStats: {fileID: 0}
 --- !u!114 &1055694608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1016,7 +1037,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6015e7b4f5919b84f8f22ad668448dbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: Blue potion of intelligence
+  dialogue: Mystery Potion. Effect unknown. (500 Gold)
+  price: 500
+  slot: 6
+  playerStats: {fileID: 0}
 --- !u!212 &1055694609
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1743,7 +1767,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6015e7b4f5919b84f8f22ad668448dbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: Yellow potion of charisma
+  dialogue: Molotov Cocktail. Deal 100 damage to enemy. (250 Gold)
+  price: 250
+  slot: 4
+  playerStats: {fileID: 0}
 --- !u!58 &1437609342
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1773,6 +1800,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: Blue potion of Intelligence.
+  price: 0
+  slot: 0
+  playerStats: {fileID: 0}
 --- !u!212 &1437609344
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2391,7 +2421,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6015e7b4f5919b84f8f22ad668448dbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: Red potion of rage
+  dialogue: Red potion. Heals 50HP. (50Gold)
+  price: 50
+  slot: 1
+  playerStats: {fileID: 0}
 --- !u!58 &1928743160
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2421,6 +2454,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: Blue potion of Intelligence.
+  price: 0
+  slot: 0
+  playerStats: {fileID: 0}
 --- !u!212 &1928743162
 SpriteRenderer:
   m_ObjectHideFlags: 0

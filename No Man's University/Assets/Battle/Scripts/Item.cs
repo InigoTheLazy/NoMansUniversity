@@ -41,7 +41,6 @@ public class Item : MonoBehaviour
 
         else if (type == "potion")
         {
-            Debug.Log(ID);
             equipped = false;
             switch (ID)
             {

@@ -15,6 +15,9 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, I
     public Transform damTextObj;
     public GameObject infoBox;
 
+    public bool slot1, slot2, slot3, slot4, slot5, slot6;
+
+    public GameObject playerStats;
     public GameObject Player;
     public GameObject Enemy;
     private GameObject potionPrefab;
@@ -23,19 +26,21 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, I
 
     void Start()
     {
+        FindStats();
+        playerStats = GameObject.Find("PlayerGM(Clone)");
         hasBeenUsed = false;
         playersObject = true;
-        if (this.gameObject.name == "Slot1")
+        if (this.gameObject.name == "Slot1" && slot1)
             item = Resources.Load("red potion") as GameObject;
-        else if (this.gameObject.name == "Slot2")
+        else if (this.gameObject.name == "Slot2" && slot2)
             item = Resources.Load("brown potion") as GameObject;
-        else if (this.gameObject.name == "Slot3")
+        else if (this.gameObject.name == "Slot3" && slot3)
             item = Resources.Load("purple potion") as GameObject;
-        else if (this.gameObject.name == "Slot4")
+        else if (this.gameObject.name == "Slot4" && slot4)
             item = Resources.Load("yellow potion") as GameObject;
-        else if (this.gameObject.name == "Slot5")
+        else if (this.gameObject.name == "Slot5" && slot5)
             item = Resources.Load("green potion") as GameObject;
-        else if (this.gameObject.name == "Slot6")
+        else if (this.gameObject.name == "Slot6" && slot6)
             item = Resources.Load("blue potion") as GameObject;
 
         Enemy = GameObject.Find("Enemy");
@@ -70,5 +75,16 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, I
     public void OnPointerExit(PointerEventData pointerEventData)
     {
         infoBox.GetComponent<Text>().text = "";
+    }
+
+    public void FindStats()
+    {
+        playerStats = GameObject.Find("PlayerGM(Clone)");
+        slot1 = playerStats.GetComponent<PlayerData>().slot1;
+        slot2 = playerStats.GetComponent<PlayerData>().slot2;
+        slot3 = playerStats.GetComponent<PlayerData>().slot3;
+        slot4 = playerStats.GetComponent<PlayerData>().slot4;
+        slot5 = playerStats.GetComponent<PlayerData>().slot5;
+        slot6 = playerStats.GetComponent<PlayerData>().slot6;
     }
 }
