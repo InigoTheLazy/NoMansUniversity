@@ -1005,7 +1005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 747c115854409964ea4330473c180ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: You have just encountered a " Door " !
+  dialogue: There is a thief in that room, hurry up before he takes your pencils
   loadlevel: BattleScene2
 --- !u!61 &1651637118
 BoxCollider2D:
@@ -1126,7 +1126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 747c115854409964ea4330473c180ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: You have just encountered a " Door " !
+  dialogue: Watch out, you don't want to face that lecturer without a certain set
+    of skills !!!
   loadlevel: BattleScene3
 --- !u!61 &1824472539
 BoxCollider2D:
