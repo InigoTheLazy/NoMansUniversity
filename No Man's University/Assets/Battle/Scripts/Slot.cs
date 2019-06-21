@@ -29,21 +29,39 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, I
         FindStats();
         playerStats = GameObject.Find("PlayerGM(Clone)");
         hasBeenUsed = false;
-        playersObject = true;
+        playersObject = false;
         if (this.gameObject.name == "Slot1" && slot1)
+        {
             item = Resources.Load("red potion") as GameObject;
+            playersObject = true;
+        }
         else if (this.gameObject.name == "Slot2" && slot2)
+        {
             item = Resources.Load("brown potion") as GameObject;
+            playersObject = true;
+        }
         else if (this.gameObject.name == "Slot3" && slot3)
+        {
             item = Resources.Load("purple potion") as GameObject;
+            playersObject = true;
+        }
         else if (this.gameObject.name == "Slot4" && slot4)
+        {
             item = Resources.Load("yellow potion") as GameObject;
+            playersObject = true;
+        }
         else if (this.gameObject.name == "Slot5" && slot5)
+        {
             item = Resources.Load("green potion") as GameObject;
+            playersObject = true;
+        }
         else if (this.gameObject.name == "Slot6" && slot6)
+        {
             item = Resources.Load("blue potion") as GameObject;
+            playersObject = true;
+        }
 
-        Enemy = GameObject.Find("Enemy");
+            Enemy = GameObject.Find("Enemy");
 
         slotIconGO = transform.GetChild(0);
     }
