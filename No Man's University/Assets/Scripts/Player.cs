@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] private AudioSource audio;
+    [SerializeField] private AudioClip footstepSound;
     [SerializeField]
     private float speed;
     private Vector2 direction;
@@ -53,7 +55,7 @@ public class Player : MonoBehaviour
     {
         direction = Vector2.zero;
 
-        if(Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
             direction += Vector2.up;
         if (Input.GetKey(KeyCode.A))
             direction += Vector2.left;
@@ -74,5 +76,11 @@ public class Player : MonoBehaviour
         animator.SetLayerWeight(1, 1);
         animator.SetFloat("x", direction.x);
         animator.SetFloat("y", direction.y);
+    }
+
+    void Footstep()
+    {
+        if (audio && !audio.isPlaying)
+            audio.PlayOneShot(footstepSound);
     }
 }
