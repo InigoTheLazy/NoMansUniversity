@@ -32,40 +32,49 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, I
         Player = GameObject.Find("generic_character_1 1");
         hasBeenUsed = false;
         playersObject = false;
+        slotIconGO = transform.GetChild(0);
+        UpdateSlot(false);
+
         if (this.gameObject.name == "Slot1" && slot1)
         {
             item = Resources.Load("red potion") as GameObject;
             playersObject = true;
+            UpdateSlot(slot1);
         }
         else if (this.gameObject.name == "Slot2" && slot2)
         {
             item = Resources.Load("brown potion") as GameObject;
             playersObject = true;
+            UpdateSlot(slot2);
         }
         else if (this.gameObject.name == "Slot3" && slot3)
         {
             item = Resources.Load("purple potion") as GameObject;
             playersObject = true;
+            UpdateSlot(slot3);
         }
         else if (this.gameObject.name == "Slot4" && slot4)
         {
             item = Resources.Load("yellow potion") as GameObject;
             playersObject = true;
+            UpdateSlot(slot4);
         }
         else if (this.gameObject.name == "Slot5" && slot5)
         {
             item = Resources.Load("green potion") as GameObject;
             playersObject = true;
+            UpdateSlot(slot5);
         }
         else if (this.gameObject.name == "Slot6" && slot6)
         {
             item = Resources.Load("blue potion") as GameObject;
             playersObject = true;
+            UpdateSlot(slot6);
         }
 
         Enemy = GameObject.Find("Enemy");
 
-        slotIconGO = transform.GetChild(0);
+        
     }
 
     public void OnPointerClick(PointerEventData pointerEventData)
@@ -74,12 +83,18 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, I
         {
             UseItem();
             hasBeenUsed = true;
+            slotIconGO.GetComponent<Image>().color = new Color32(0, 0, 0, 100);
         }
     }
 
-    public void UpdateSlot()
+    public void UpdateSlot(bool tf)
     {
-        slotIconGO.GetComponent<Image>().sprite = icon;
+        if (tf)
+            slotIconGO.GetComponent<Image>().color = new Color32(255, 255, 255, 100);
+        
+        else
+            slotIconGO.GetComponent<Image>().color = new Color32(0, 0, 0, 100);
+
     }
 
     public void UseItem()

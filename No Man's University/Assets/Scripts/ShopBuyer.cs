@@ -11,6 +11,7 @@ public class ShopBuyer : MonoBehaviour
     private DialogueManager ddMAn;
     private bool playerinzone;
     public GameObject playerStats;
+    private bool justBought = false;
 
     void Start()
     {
@@ -20,42 +21,43 @@ public class ShopBuyer : MonoBehaviour
     }
     void Update()
     {
-        if (playerinzone && Input.GetKeyDown(KeyCode.E))
+        if (playerinzone && Input.GetKey(KeyCode.E))
         {
             switch (slot)
             {
                 case 1:
                     if (playerStats.GetComponent<PlayerData>().slot1)
-                        ddMAn.ShowBox("You already have this potion.");
+                        dialogue = "You already have this potion.";
                     else Check(price, slot);
                     break;
                 case 2:
                     if (playerStats.GetComponent<PlayerData>().slot2)
-                        ddMAn.ShowBox("You already have this potion.");
+                        dialogue = "You already have this potion.";
                     else Check(price, slot);
                     break;
                 case 3:
                     if (playerStats.GetComponent<PlayerData>().slot3)
-                        ddMAn.ShowBox("You already have this potion.");
+                        dialogue = "You already have this potion.";
                     else Check(price, slot);
                     break;
                 case 4:
                     if (playerStats.GetComponent<PlayerData>().slot4)
-                        ddMAn.ShowBox("You already have this potion.");
+                        dialogue = "You already have this potion.";
                     else Check(price, slot);
                     break;
                 case 5:
                     if (playerStats.GetComponent<PlayerData>().slot5)
-                        ddMAn.ShowBox("You already have this potion.");
+                        dialogue = "You already have this potion.";
                     else Check(price, slot);
                     break;
                 case 6:
                     if (playerStats.GetComponent<PlayerData>().slot6)
-                        ddMAn.ShowBox("You already have this potion.");
+                        dialogue = "You already have this potion.";
                     else Check(price, slot);
                     break;
             }
         }
+        else HaveCheck();
     }
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -84,11 +86,49 @@ public class ShopBuyer : MonoBehaviour
     void Check(int price, int slot)
     {
         if (playerStats.GetComponent<PlayerData>().coins < price)
-            ddMAn.ShowBox("Not enough gold");
+            dialogue = "Not enough gold";
         else
         {
             playerStats.GetComponent<PlayerData>().PotionBought(slot, price);
-            ddMAn.ShowBox("Gratz! You bought the potion. Put 'em to good use in battle.");
+            dialogue = "Gratz! You bought the potion. Put 'em to good use in battle.";
+            ddMAn.ShowBox(dialogue);
+            justBought = true;
+        }
+    }
+
+    void HaveCheck()
+    {
+        if (justBought)
+            dialogue = "Gratz! You bought the potion. Put 'em to good use in battle.";
+        else
+        {
+            switch (slot)
+            {
+                case 1:
+                    if (playerStats.GetComponent<PlayerData>().slot1)
+                        dialogue = "You already have this potion.";
+                    break;
+                case 2:
+                    if (playerStats.GetComponent<PlayerData>().slot2)
+                        dialogue = "You already have this potion.";
+                    break;
+                case 3:
+                    if (playerStats.GetComponent<PlayerData>().slot3)
+                        dialogue = "You already have this potion.";
+                    break;
+                case 4:
+                    if (playerStats.GetComponent<PlayerData>().slot4)
+                        dialogue = "You already have this potion.";
+                    break;
+                case 5:
+                    if (playerStats.GetComponent<PlayerData>().slot5)
+                        dialogue = "You already have this potion.";
+                    break;
+                case 6:
+                    if (playerStats.GetComponent<PlayerData>().slot6)
+                        dialogue = "You already have this potion.";
+                    break;
+            }
         }
     }
 

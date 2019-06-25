@@ -42,6 +42,7 @@ public class battleflow : MonoBehaviour
         walkingPlayer = GameObject.Find("Player");
         initiateDeflect = true;
         dMAn = FindObjectOfType<DialogueManager>();
+        
     }
 
     void Update()
@@ -205,38 +206,32 @@ public class battleflow : MonoBehaviour
     public void VictoryScreen ()
     {
         string scene = "";
-        string coins = "";
-        string exp = "";
+        int coins = 0;
+        int exp = 0;
         GameObject.Find("generic_character_1 1").GetComponent<herocon>().strengthPotionOn = false;
         switch (enemyNumber)
         {
             case 0:
-                playerStats.GetComponent<PlayerData>().coins += 10;
-                playerStats.GetComponent<PlayerData>().experience += 100;
                 scene = "WalkingScenev2";
-                coins = "10";
-                exp = "100";
+                coins = 10;
+                exp = 100;
                 break;
             case 1:
-                playerStats.GetComponent<PlayerData>().coins += 50;
-                playerStats.GetComponent<PlayerData>().experience += 250;
                 scene = "WalkingScenev4";
-                coins = "50";
-                exp = "250";
+                coins = 50;
+                exp = 250;
                 break;
             case 2:
-                playerStats.GetComponent<PlayerData>().coins += 250;
-                playerStats.GetComponent<PlayerData>().experience += 1000;
                 scene = "WalkingScenev4";
-                coins = "250";
-                exp = "1000";
+                coins = 250;
+                exp = 1000;
                 break;
-
         }
         CanvasObject.SetActive(false);
         ShowPanel(false);
         CombatUI.SetActive(false);
-        dMAn.ShowBox("You found "+ coins + " coins. \nYou got " + exp + " experience points.");
+        dMAn.ShowBox("You found " + coins.ToString() + " coins. \nYou got " + exp.ToString() + " experience points.");
+        
         if (Input.GetKeyUp(KeyCode.E))
         {
             dMAn.DisableBox();
@@ -244,6 +239,8 @@ public class battleflow : MonoBehaviour
             enemyDefeated = "n";
             whichturn = 1;
             walkingPlayer.SetActive(true);
+            playerStats.GetComponent<PlayerData>().coins += coins;
+            playerStats.GetComponent<PlayerData>().experience += exp;
         }
     }
 
