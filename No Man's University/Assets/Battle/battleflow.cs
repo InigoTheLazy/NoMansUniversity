@@ -18,6 +18,8 @@ public class battleflow : MonoBehaviour
     public GameObject enemyCharacter;
     public GameObject walkingPlayer;
     public GameObject playerStats;
+    public GameObject CanvasObject;
+    public GameObject CombatUI;
     private bool defendYourself = false;
     private char defendLetter;
 
@@ -31,44 +33,22 @@ public class battleflow : MonoBehaviour
     private GameObject letterW;
     public bool initiateDeflect;
 
+    private DialogueManager dMAn;
+
     void Start()
     {
         playerStats = GameObject.Find("PlayerGM(Clone)");
         armor = playerStats.GetComponent<PlayerData>().armor;
         walkingPlayer = GameObject.Find("Player");
         initiateDeflect = true;
+        dMAn = FindObjectOfType<DialogueManager>();
     }
 
     void Update()
     {
         if (enemyDefeated == "y")
         {
-            string scene = "";
-            GameObject.Find("generic_character_1 1").GetComponent<herocon>().strengthPotionOn = false;
-            switch (enemyNumber)
-            {
-                case 0:
-                    playerStats.GetComponent<PlayerData>().coins += 10;
-                    playerStats.GetComponent<PlayerData>().experience += 100;
-                    scene = "WalkingScenev2";
-                    break;
-                case 1:
-                    playerStats.GetComponent<PlayerData>().coins += 50;
-                    playerStats.GetComponent<PlayerData>().experience += 250;
-                    scene = "WalkingScenev4";
-                    break;
-                case 2:
-                    playerStats.GetComponent<PlayerData>().coins += 250;
-                    playerStats.GetComponent<PlayerData>().experience += 1000;
-                    scene = "WalkingScenev4";
-                    break;
-
-            }
-            SceneManager.LoadScene(scene);
-            
-            enemyDefeated = "n";
-            whichturn = 1;
-            walkingPlayer.SetActive(true);
+            VictoryScreen();
         }
 
         if (whichturn == 0 || whichturn == 2)
@@ -220,6 +200,51 @@ public class battleflow : MonoBehaviour
     private void FailedDefense()
     {
         damageMultiplier = 1;
+    }
+
+    public void VictoryScreen ()
+    {
+        string scene = "";
+        string coins = "";
+        string exp = "";
+        GameObject.Find("generic_character_1 1").GetComponent<herocon>().strengthPotionOn = false;
+        switch (enemyNumber)
+        {
+            case 0:
+                playerStats.GetComponent<PlayerData>().coins += 10;
+                playerStats.GetComponent<PlayerData>().experience += 100;
+                scene = "WalkingScenev2";
+                coins = "10";
+                exp = "100";
+                break;
+            case 1:
+                playerStats.GetComponent<PlayerData>().coins += 50;
+                playerStats.GetComponent<PlayerData>().experience += 250;
+                scene = "WalkingScenev4";
+                coins = "50";
+                exp = "250";
+                break;
+            case 2:
+                playerStats.GetComponent<PlayerData>().coins += 250;
+                playerStats.GetComponent<PlayerData>().experience += 1000;
+                scene = "WalkingScenev4";
+                coins = "250";
+                exp = "1000";
+                break;
+
+        }
+        CanvasObject.SetActive(false);
+        ShowPanel(false);
+        CombatUI.SetActive(false);
+        dMAn.ShowBox("You found "+ coins + " coins. \nYou got " + exp + " experience points.");
+        if (Input.GetKeyUp(KeyCode.E))
+        {
+            dMAn.DisableBox();
+            SceneManager.LoadScene(scene);
+            enemyDefeated = "n";
+            whichturn = 1;
+            walkingPlayer.SetActive(true);
+        }
     }
 
 }
