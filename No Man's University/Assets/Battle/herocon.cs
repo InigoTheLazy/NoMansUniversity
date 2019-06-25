@@ -17,10 +17,14 @@ public class herocon : MonoBehaviour
     public Button button1;
     public GameObject playerStats;
     public GameObject walkingPlayer;
+    public GameObject skill;
+    public GameObject BGM;
     public bool strengthPotionOn;
     private bool hasStrengthUsed;
     private bool usedLastTurn;
     private bool changeToFalse;
+    public bool alive;
+    public bool makumba = false;
 
     void Awake()
     {
@@ -28,6 +32,7 @@ public class herocon : MonoBehaviour
         hasStrengthUsed = false;
         usedLastTurn = false;
         changeToFalse = false;
+        alive = true;
         FindStats();
     }
 
@@ -37,11 +42,11 @@ public class herocon : MonoBehaviour
         healthBar.value = heroHP;
         HPText.text = heroHP + "/" + heroMaxHP;
 
-        if (heroHP <= 0)
+        if (heroHP <= 0 && alive)
         {
-            walkingPlayer.SetActive(true);
-            SceneManager.LoadScene("WalkingScene");
-                
+            BGM = GameObject.Find("Battle_Game_Master");
+            BGM.gameObject.GetComponent<battleflow>().Die();
+            alive = false;
         }
 
         if (strengthPotionOn && !hasStrengthUsed)
@@ -67,6 +72,8 @@ public class herocon : MonoBehaviour
         battleflow.damageDisplay = "y";
         if (changeToFalse)
         {
+            skill = GameObject.Find("Skill_Button");
+            skill.GetComponent<Image>().color = Color.white;
             usedLastTurn = false;
             changeToFalse = false;
         }
@@ -94,6 +101,8 @@ public class herocon : MonoBehaviour
             strengthPotionOn = false;
             StartCoroutine(turnEnd());
             usedLastTurn = true;
+            skill = GameObject.Find("Skill_Button");
+            skill.GetComponent<Image>().color = Color.black;
         }
     }
 

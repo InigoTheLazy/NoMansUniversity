@@ -29,9 +29,9 @@ public class InformationText : MonoBehaviour
 
     private void AssignTextBox()
     {
-        attackTextBox = "Deal 40 damage. Zoinks.";
-        skillTextBox = "Does a flying kick dishing out tons of damage.";
-        itemTextBox = "For now its run";
+        attackTextBox = "Basic attack. Deal moderate damage.";
+        skillTextBox = "Special attack. Can be used every other turn. Deals high damage.";
+        itemTextBox = "Potion inventory. A potion can be used once per battle.";
         runTextBox = "Giving up now? Didn't expect any less.";
     }
 

@@ -12,6 +12,7 @@ public class BattleVideos : MonoBehaviour
     {
         GameObject camera = GameObject.Find("Main Camera");
         var videoPlayer = camera.AddComponent<UnityEngine.Video.VideoPlayer>();
+        videoPlayer.Prepare();
     }
 
     // Update is called once per frame
@@ -20,16 +21,17 @@ public class BattleVideos : MonoBehaviour
         
     }
 
-    public void PlayVideo(string name, float vidtim)
+    public void PlayVideo(string name, float vidtim, bool tf)
     {
         GameObject camera = GameObject.Find("Main Camera");
         var videoPlayer = camera.AddComponent<UnityEngine.Video.VideoPlayer>();
         videoPlayer.renderMode = UnityEngine.Video.VideoRenderMode.CameraNearPlane;
-        videoPlayer.targetCameraAlpha = 2.5F;
+        videoPlayer.targetCameraAlpha = 1F;
         canvas.SetActive(false);
         videoPlayer.url = name;
         videoPlayer.Play();
-        Invoke("CanvasOn", vidtim);
+        if (tf)
+            Invoke("CanvasOn", vidtim);
         Destroy(videoPlayer, vidtim);
     }
 

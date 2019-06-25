@@ -67,12 +67,12 @@ public class Item : MonoBehaviour
                     break;
                 case 5:
                     BGM = GameObject.Find("Battle_Game_Master");
-                    BGM.gameObject.GetComponent<BattleVideos>().PlayVideo("Assets/Battle/Videos/makumba_death.mp4", 6);
+                    BGM.gameObject.GetComponent<BattleVideos>().PlayVideo("Assets/Resources/makumba_death.mp4", 5.5f, false);
                     Invoke("Die", 6);
                     break;
                 case 6:
                     BGM = GameObject.Find("Battle_Game_Master");
-                    BGM.gameObject.GetComponent<BattleVideos>().PlayVideo("Assets/Battle/Videos/potion_empty.mp4", 6);
+                    BGM.gameObject.GetComponent<BattleVideos>().PlayVideo("Assets/Resources/potion_empty.mp4", 6, true);
                     break;
             }
         }
@@ -80,6 +80,7 @@ public class Item : MonoBehaviour
 
     private void Die()
     {
-        PlayerGO.gameObject.GetComponent<herocon>().AlterHP(-PlayerGO.gameObject.GetComponent<herocon>().heroMaxHP);
+        BGM = GameObject.Find("Battle_Game_Master");
+        BGM.gameObject.GetComponent<battleflow>().Die2();
     }
 }

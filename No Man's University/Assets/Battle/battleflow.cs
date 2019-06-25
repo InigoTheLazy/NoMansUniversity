@@ -123,9 +123,21 @@ public class battleflow : MonoBehaviour
 
     public void Run ()
     {
-        this.gameObject.GetComponent<BattleVideos>().PlayVideo("Assets/Battle/Videos/i_am_speed.mp4", 4);
+        this.gameObject.GetComponent<BattleVideos>().PlayVideo("Assets/Resources/i_am_speed.mp4", 4, false);
 
         Invoke("Run2", 3);
+    }
+
+    public void Die()
+    {
+        this.gameObject.GetComponent<BattleVideos>().PlayVideo("Assets/Resources/you_died.mp4", 4, false);
+        Invoke("Die2", 4);
+    }
+
+    public void Die2()
+    {
+        walkingPlayer.SetActive(true);
+        SceneManager.LoadScene("WalkingScene");
     }
 
     private void Run2()
@@ -140,7 +152,7 @@ public class battleflow : MonoBehaviour
         initiateDeflect = false;
 
 
-            int randomNumber = Random.Range(0, 3);
+            int randomNumber = Random.Range(0, 4);
             switch (randomNumber)
             {
                 case 0:
@@ -170,13 +182,14 @@ public class battleflow : MonoBehaviour
 
     private void EnableLetter(GameObject letter)
     {
+        ChangeColor("white");
         TurnOffAllLetters();
         letter.SetActive(true);
         defendYourself = true;
-        Invoke("NoMoreDefending", 10f);
+        //Invoke("NoMoreDefending", 10f);
 
 
-        Invoke("TurnOffAllLetters", 1f);
+        Invoke("TurnOffAllLetters", 2f);
     }
 
     private void TurnOffAllLetters()
@@ -195,11 +208,13 @@ public class battleflow : MonoBehaviour
 
     private void SuccesfulDefense()
     {
+        ChangeColor("green");
         damageMultiplier = 0.5f;
     }
 
     private void FailedDefense()
     {
+        ChangeColor("red");
         damageMultiplier = 1;
     }
 
@@ -241,6 +256,32 @@ public class battleflow : MonoBehaviour
             walkingPlayer.SetActive(true);
             playerStats.GetComponent<PlayerData>().coins += coins;
             playerStats.GetComponent<PlayerData>().experience += exp;
+        }
+    }
+
+    public void ChangeColor(string color)
+    {
+        switch(color)
+        {
+            case "green":
+                letterA.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
+                letterD.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
+                letterS.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
+                letterW.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
+                break;
+            case "red":
+                letterA.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+                letterD.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+                letterS.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+                letterW.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+                break;
+            case "white":
+                letterA.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+                letterD.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+                letterS.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+                letterW.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+                damageMultiplier = 1;
+                break;
         }
     }
 
