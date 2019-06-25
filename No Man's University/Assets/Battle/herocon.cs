@@ -11,6 +11,7 @@ public class herocon : MonoBehaviour
     public int str;
     public int dex;
     public Transform damTextObj;
+    public Transform healTextObj;
     public Slider healthBar;
     public Text HPText;
     public Button button1;
@@ -112,6 +113,9 @@ public class herocon : MonoBehaviour
             heroHP = heroMaxHP;
         else
             heroHP += alterAmount;
+        battleflow.currentDamage = alterAmount;
+
+        Instantiate(healTextObj, new Vector2(-6f, 4.95f), damTextObj.rotation);
     }
 
 }

@@ -14,6 +14,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, I
     public Transform slotIconGO;
     public Transform damTextObj;
     public GameObject infoBox;
+    public Transform particle;
 
     public bool slot1, slot2, slot3, slot4, slot5, slot6;
 
@@ -28,6 +29,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, I
     {
         FindStats();
         playerStats = GameObject.Find("PlayerGM(Clone)");
+        Player = GameObject.Find("generic_character_1 1");
         hasBeenUsed = false;
         playersObject = false;
         if (this.gameObject.name == "Slot1" && slot1)
@@ -82,7 +84,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, I
 
     public void UseItem()
     {
-        item.GetComponent<Item>().ItemUsage(Player, Enemy, damTextObj);
+        item.GetComponent<Item>().ItemUsage(Player, Enemy, damTextObj, particle);
     }
 
     public void OnPointerEnter(PointerEventData pointerEventData)

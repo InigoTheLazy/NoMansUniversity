@@ -747,6 +747,7 @@ MonoBehaviour:
   slotIconGO: {fileID: 0}
   damTextObj: {fileID: 0}
   infoBox: {fileID: 405465676}
+  particle: {fileID: 0}
   slot1: 0
   slot2: 0
   slot3: 0
@@ -1637,6 +1638,8 @@ MonoBehaviour:
   dex: 0
   damTextObj: {fileID: 3766054355512639470, guid: bb6ebd22d08b07b4db1698da9e73dc01,
     type: 3}
+  healTextObj: {fileID: 4472273651751416858, guid: a4777c8ba65db4e4e86932ce54d662ac,
+    type: 3}
   healthBar: {fileID: 476612691}
   HPText: {fileID: 1893304660}
   button1: {fileID: 0}
@@ -1912,6 +1915,8 @@ MonoBehaviour:
   slotIconGO: {fileID: 0}
   damTextObj: {fileID: 0}
   infoBox: {fileID: 405465676}
+  particle: {fileID: 3171828622961621177, guid: e08917fd70b39e440be02063ecd671e9,
+    type: 3}
   slot1: 0
   slot2: 0
   slot3: 0
@@ -2099,6 +2104,7 @@ MonoBehaviour:
   slotIconGO: {fileID: 0}
   damTextObj: {fileID: 0}
   infoBox: {fileID: 405465676}
+  particle: {fileID: 0}
   slot1: 0
   slot2: 0
   slot3: 0
@@ -2393,6 +2399,7 @@ MonoBehaviour:
   damTextObj: {fileID: 3766054355512639470, guid: bb6ebd22d08b07b4db1698da9e73dc01,
     type: 3}
   infoBox: {fileID: 405465676}
+  particle: {fileID: 0}
   slot1: 0
   slot2: 0
   slot3: 0
@@ -4233,6 +4240,8 @@ MonoBehaviour:
   slotIconGO: {fileID: 1280194740}
   damTextObj: {fileID: 0}
   infoBox: {fileID: 405465676}
+  particle: {fileID: 3171828622961621177, guid: e08917fd70b39e440be02063ecd671e9,
+    type: 3}
   slot1: 0
   slot2: 0
   slot3: 0
@@ -4519,6 +4528,7 @@ MonoBehaviour:
   slotIconGO: {fileID: 0}
   damTextObj: {fileID: 0}
   infoBox: {fileID: 405465676}
+  particle: {fileID: 0}
   slot1: 0
   slot2: 0
   slot3: 0

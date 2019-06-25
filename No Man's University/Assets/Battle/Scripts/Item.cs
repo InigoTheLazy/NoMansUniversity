@@ -31,7 +31,7 @@ public class Item : MonoBehaviour
         }
     }
 
-    public void ItemUsage(GameObject player, GameObject enemy, Transform damTextObj)
+    public void ItemUsage(GameObject player, GameObject enemy, Transform damTextObj, Transform particle)
     {
         PlayerGO = player;
         if (type == "weapon")
@@ -41,14 +41,18 @@ public class Item : MonoBehaviour
 
         else if (type == "potion")
         {
+            Vector3 playerpos = new Vector3(player.gameObject.transform.position.x, player.gameObject.transform.position.y + 3, player.gameObject.transform.position.z);
             equipped = false;
+            
             switch (ID)
             {
                 case 1:
-                     player.gameObject.GetComponent<herocon>().AlterHP(50);
-                     break;
+                    player.gameObject.GetComponent<herocon>().AlterHP(50);
+                    Instantiate(particle, playerpos, particle.rotation);
+                    break;
                 case 2:
                     player.gameObject.GetComponent<herocon>().AlterHP(200);
+                    Instantiate(particle, playerpos, particle.rotation);
                     break;
                 case 3:
                     player.gameObject.GetComponent<herocon>().strengthPotionOn = true;
