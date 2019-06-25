@@ -20,7 +20,7 @@ public class enemycon3 : MonoBehaviour
         if (battleflow.whichturn == 2)
         {
             float a = 1;
-            int randomNumber = Random.Range(0, 1);
+            int randomNumber = Random.Range(0, 3);
             switch (randomNumber)
             {
                 case 0:
@@ -29,6 +29,10 @@ public class enemycon3 : MonoBehaviour
                 case 1:
                     GetComponent<Animator>().SetTrigger("enemyAttack2");
                     a = 1.5f;
+                    break;
+                case 2:
+                    GetComponent<Animator>().SetTrigger("enemySpecial");
+                    a = 2f;
                     break;
             }
             StartCoroutine(turnEnd(a));

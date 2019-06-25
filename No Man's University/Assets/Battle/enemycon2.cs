@@ -20,7 +20,7 @@ public class enemycon2 : MonoBehaviour
         if (battleflow.whichturn == 2)
         {
             float a = 1;
-            int randomNumber = Random.Range(0, 1);
+            int randomNumber = Random.Range(0, 2);
             switch (randomNumber)
             {
                 case 0:

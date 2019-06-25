@@ -44,7 +44,7 @@ public class battleflow : MonoBehaviour
         if (enemyDefeated == "y")
         {
             string scene = "";
-            GameObject.Find("generic_character_1 Variant").GetComponent<herocon>().strengthPotionOn = false;
+            GameObject.Find("generic_character_1 1").GetComponent<herocon>().strengthPotionOn = false;
             switch (enemyNumber)
             {
                 case 0:
