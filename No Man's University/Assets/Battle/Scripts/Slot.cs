@@ -63,7 +63,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, I
             playersObject = true;
         }
 
-            Enemy = GameObject.Find("Enemy");
+        Enemy = GameObject.Find("Enemy");
 
         slotIconGO = transform.GetChild(0);
     }

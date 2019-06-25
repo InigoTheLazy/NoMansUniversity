@@ -42,6 +42,7 @@ public class Item : MonoBehaviour
         else if (type == "potion")
         {
             Vector3 playerpos = new Vector3(player.gameObject.transform.position.x, player.gameObject.transform.position.y + 3, player.gameObject.transform.position.z);
+            Vector3 enemypos = new Vector3(enemy.gameObject.transform.position.x, enemy.gameObject.transform.position.y + 3, enemy.gameObject.transform.position.z);
             equipped = false;
             
             switch (ID)
@@ -56,11 +57,13 @@ public class Item : MonoBehaviour
                     break;
                 case 3:
                     player.gameObject.GetComponent<herocon>().strengthPotionOn = true;
+                    Instantiate(particle, playerpos, particle.rotation);
                     break;
                 case 4:
                     battleflow.currentDamage = 100;
                     Instantiate(damTextObj, new Vector2(5.85f, 4.95f), damTextObj.rotation);
                     battleflow.damageDisplay = "y";
+                    Instantiate(particle, enemypos, particle.rotation);
                     break;
                 case 5:
                     BGM = GameObject.Find("Battle_Game_Master");

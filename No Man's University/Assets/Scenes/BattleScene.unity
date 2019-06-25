@@ -628,7 +628,8 @@ MonoBehaviour:
   slotIconGO: {fileID: 0}
   damTextObj: {fileID: 0}
   infoBox: {fileID: 2119055860}
-  particle: {fileID: 0}
+  particle: {fileID: 8565679603086151033, guid: 391df62cd0819c6429502d19d6c49612,
+    type: 3}
   slot1: 0
   slot2: 0
   slot3: 0
@@ -2182,7 +2183,7 @@ PrefabInstance:
     - target: {fileID: 8484662008240030537, guid: 55abaa9520a16164eab0bac6829e5909,
         type: 3}
       propertyPath: m_Name
-      value: lesser_hobo
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8484662008239742825, guid: 55abaa9520a16164eab0bac6829e5909,
         type: 3}
@@ -2419,7 +2420,8 @@ MonoBehaviour:
   damTextObj: {fileID: 3766054355512639470, guid: bb6ebd22d08b07b4db1698da9e73dc01,
     type: 3}
   infoBox: {fileID: 2119055860}
-  particle: {fileID: 0}
+  particle: {fileID: 1054614511047247697, guid: ab7cfde669d0e4541843663eb7bf48b3,
+    type: 3}
   slot1: 0
   slot2: 0
   slot3: 0
