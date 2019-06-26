@@ -9,11 +9,13 @@ public class BattleEnter : MonoBehaviour
     private DialogueManager dMAn;
     private bool playerinzone;
     [SerializeField] private string loadlevel;
+
     void Start()
     {
         playerinzone = false;
         dMAn = FindObjectOfType<DialogueManager>();
     }
+
     void Update()
     {
         if ( playerinzone && Input.GetKeyDown(KeyCode.E))
@@ -21,6 +23,7 @@ public class BattleEnter : MonoBehaviour
             SceneManager.LoadScene(loadlevel);
         }
     }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.name == "Player")
@@ -28,6 +31,7 @@ public class BattleEnter : MonoBehaviour
             playerinzone = true;
         }
     }
+
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.name == "Player")
@@ -37,6 +41,7 @@ public class BattleEnter : MonoBehaviour
                 dMAn.DisableBox();
         }
     }
+
     void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.name == "Player")

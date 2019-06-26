@@ -9,10 +9,12 @@ public class ChangeScene : MonoBehaviour
     public string exitPoint;
     public string levelName;
     private Player thePlayer;
+
     void Start()
     {
         thePlayer = FindObjectOfType<Player>();
     }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player"))

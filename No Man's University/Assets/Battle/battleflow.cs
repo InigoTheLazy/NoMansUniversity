@@ -237,7 +237,7 @@ public class battleflow : MonoBehaviour
                 exp = 250;
                 break;
             case 2:
-                scene = "CreditScene";
+                scene = "CreditsScene";
                 coins = 250;
                 exp = 1000;
                 break;
