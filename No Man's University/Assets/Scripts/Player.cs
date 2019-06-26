@@ -40,6 +40,9 @@ public class Player : MonoBehaviour
             this.gameObject.SetActive(false);
         if (scene.name == "BattleScene3")
             this.gameObject.SetActive(false);
+        if (scene.name == "CreditScene")
+            this.gameObject.SetActive(false);
+
     }
     public void Move()
     {
