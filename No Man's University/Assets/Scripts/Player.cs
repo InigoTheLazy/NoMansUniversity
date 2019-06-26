@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -24,11 +25,11 @@ public class Player : MonoBehaviour
 		}
 		else
 		    Destroy(this.gameObject);
-
     }
 
     void Update()
     {
+        GetHUD();
         GetInput();
         Move();
         transform.rotation = Quaternion.Euler(lockPos, lockPos, lockPos);
@@ -85,5 +86,25 @@ public class Player : MonoBehaviour
     {
         if (audio && !audio.isPlaying)
             audio.PlayOneShot(footstepSound);
+    }
+
+    void GetHUD()
+    {
+        GameObject playerStats = GameObject.Find("PlayerGM(Clone)");
+        int gold = playerStats.GetComponent<PlayerData>().coins,
+            experience = playerStats.GetComponent<PlayerData>().experience;
+        Text textGold, textExperience;
+
+        if (GameObject.Find("Gold") && GameObject.Find("Experience"))
+        {
+            textGold = GameObject.Find("Gold").GetComponent<Text>();
+            textExperience = GameObject.Find("Experience").GetComponent<Text>();
+
+            if (textGold && textExperience)
+            {
+                textGold.text = gold.ToString();
+                textExperience.text = experience.ToString();
+            }
+        }
     }
 }
