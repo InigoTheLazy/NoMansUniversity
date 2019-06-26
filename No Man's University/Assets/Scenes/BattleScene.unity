@@ -2322,7 +2322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHP: 100
   enemyMaxHP: 100
-  enemyAttPow: 500
+  enemyAttPow: 50
   damTextObj: {fileID: 3766054355512639470, guid: bb6ebd22d08b07b4db1698da9e73dc01,
     type: 3}
   healthBar: {fileID: 81024212}
