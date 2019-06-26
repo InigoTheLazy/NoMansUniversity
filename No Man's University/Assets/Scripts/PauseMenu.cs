@@ -44,6 +44,11 @@ public class PauseMenu : MonoBehaviour
 
     public void ShowMainMenu()
     {
+        GameObject playerGM;
+
+        if (playerGM = GameObject.Find("PlayerGM(Clone)"))
+            GameObject.Destroy(playerGM);
+
         SceneManager.LoadScene("MainMenu");
     }
 }

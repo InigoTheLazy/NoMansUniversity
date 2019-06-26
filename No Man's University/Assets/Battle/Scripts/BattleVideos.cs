@@ -7,7 +7,6 @@ public class BattleVideos : MonoBehaviour
 {
     public GameObject canvas;
     
-    // Start is called before the first frame update
     void Start()
     {
         GameObject camera = GameObject.Find("Main Camera");
@@ -15,16 +14,11 @@ public class BattleVideos : MonoBehaviour
         videoPlayer.Prepare();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void PlayVideo(string name, float vidtim, bool tf)
     {
         GameObject camera = GameObject.Find("Main Camera");
         var videoPlayer = camera.AddComponent<UnityEngine.Video.VideoPlayer>();
+
         videoPlayer.renderMode = UnityEngine.Video.VideoRenderMode.CameraNearPlane;
         videoPlayer.targetCameraAlpha = 1F;
         canvas.SetActive(false);
@@ -37,7 +31,6 @@ public class BattleVideos : MonoBehaviour
 
     private void CanvasOn()
     {
-        
         canvas.SetActive(true);
     }
 

@@ -90,7 +90,13 @@ public class Player : MonoBehaviour
 
     void GetHUD()
     {
+        if (!playerExists)
+            return;
+
         GameObject playerStats = GameObject.Find("PlayerGM(Clone)");
+        if (!playerStats)
+            return;
+
         int gold = playerStats.GetComponent<PlayerData>().coins,
             experience = playerStats.GetComponent<PlayerData>().experience;
         Text textGold, textExperience;

@@ -73,8 +73,6 @@ public class Slot : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, I
         }
 
         Enemy = GameObject.Find("Enemy");
-
-        
     }
 
     public void OnPointerClick(PointerEventData pointerEventData)

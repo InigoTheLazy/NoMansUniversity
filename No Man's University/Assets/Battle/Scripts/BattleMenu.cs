@@ -6,16 +6,6 @@ public class BattleMenu : MonoBehaviour
 
     public GameObject combatMenu;
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
-
     public void BattleItemMenu()
     {
         combatMenu.SetActive(false);

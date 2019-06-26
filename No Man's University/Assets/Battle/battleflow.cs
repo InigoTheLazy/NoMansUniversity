@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
+using UnityEngine.Video;
 using UnityEngine.SceneManagement;
-using System.Collections;
+
+
 public class battleflow : MonoBehaviour
 {
     public static int whichturn = 1;
@@ -121,16 +123,19 @@ public class battleflow : MonoBehaviour
         combatInfoText.SetActive(tf);
     }
 
-    public void Run ()
+    public void Run()
     {
-        this.gameObject.GetComponent<BattleVideos>().PlayVideo("Assets/Resources/i_am_speed.mp4", 4, false);
-
+        GameObject.Find("HUD").SetActive(false);
+        GameObject.Find("CombatDialogueBox").SetActive(false);
+        gameObject.GetComponents<VideoPlayer>()[0].Play();
         Invoke("Run2", 3);
     }
 
     public void Die()
     {
-        this.gameObject.GetComponent<BattleVideos>().PlayVideo("Assets/Resources/you_died.mp4", 4, false);
+        GameObject.Find("HUD").SetActive(false);
+        GameObject.Find("CombatDialogueBox").SetActive(false);
+        gameObject.GetComponents<VideoPlayer>()[1].Play();
         Invoke("Die2", 4);
     }
 

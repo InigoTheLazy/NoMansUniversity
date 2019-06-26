@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Video;
 
 public class Item : MonoBehaviour
 {
@@ -67,12 +68,16 @@ public class Item : MonoBehaviour
                     break;
                 case 5:
                     BGM = GameObject.Find("Battle_Game_Master");
-                    BGM.gameObject.GetComponent<BattleVideos>().PlayVideo("Assets/Resources/makumba_death.mp4", 5.5f, false);
+                    GameObject.Find("HUD").SetActive(false);
+                    GameObject.Find("CombatDialogueBox").SetActive(false);
+                    BGM.GetComponents<VideoPlayer>()[2].Play();
                     Invoke("Die", 6);
                     break;
                 case 6:
                     BGM = GameObject.Find("Battle_Game_Master");
-                    BGM.gameObject.GetComponent<BattleVideos>().PlayVideo("Assets/Resources/potion_empty.mp4", 6, true);
+                    GameObject.Find("HUD").SetActive(false);
+                    GameObject.Find("CombatDialogueBox").SetActive(false);
+                    BGM.GetComponents<VideoPlayer>()[3].Play();
                     break;
             }
         }

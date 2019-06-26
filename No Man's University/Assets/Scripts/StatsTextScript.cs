@@ -24,6 +24,7 @@ public class StatsTextScript : MonoBehaviour
     public TextMeshProUGUI maxhpStat;
     public TextMeshProUGUI goldStat;
     public TextMeshProUGUI experienceStat;
+    private TextMeshProUGUI description;
 
     void Start()
     {
@@ -65,7 +66,6 @@ public class StatsTextScript : MonoBehaviour
         }
     }
 
-
     public void IncreaseDexterity()
     {
         if (playerStats.GetComponent<PlayerData>().experience >= 100)
@@ -84,5 +84,50 @@ public class StatsTextScript : MonoBehaviour
             playerStats.GetComponent<PlayerData>().experience -= 100;
             FindStats();
         }
+    }
+
+    public void DisplayStrengthDescription()
+    {
+        DisplayDescription(1);
+    }
+
+    public void DisplayConstitutionDescription()
+    {
+        DisplayDescription(2);
+    }
+
+    public void DisplayDexterityDescription()
+    {
+        DisplayDescription(3);
+    }
+
+    void DisplayDescription(int index)
+    {
+        description = GameObject.Find("Description").GetComponent<TextMeshProUGUI>();
+
+        if (!description)
+            return;
+
+        switch (index)
+        {
+            case 1:
+                description.text = "Increases strength\nCosts 100 XP";
+                break;
+            case 2:
+                description.text = "Increases constitution\nCosts 100 XP";
+                break;
+            case 3:
+                description.text = "Increases dexterity\nCosts 100 XP";
+                break;
+            default:
+                description.text = "";
+                break;
+        }
+    }
+
+    public void CleanDescription()
+    {
+        if (description)
+            description.text = "";
     }
 }
