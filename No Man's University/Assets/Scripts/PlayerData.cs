@@ -15,25 +15,6 @@ public class PlayerData : MonoBehaviour
 
     public bool slot1, slot2, slot3, slot4, slot5, slot6;
 
-    public PlayerData(Player player)
-    {
-        uniquePlayerName = player.uniquePlayerName;
-        strStat = player.strStat;
-        conStat = player.conStat;
-        dexStat = player.dexStat;
-        armor = player.armor;
-        hitPointsMax = player.hitPointsMax;
-        hitPointsCur = player.hitPointsCur;
-        coins = player.coins;
-        experience = player.experience;
-        slot1 = player.slot1;
-        slot2 = player.slot2;
-        slot3 = player.slot3;
-        slot4 = player.slot4;
-        slot5 = player.slot5;
-        slot6 = player.slot6;
-    }
-
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -90,5 +71,31 @@ public class PlayerData : MonoBehaviour
         }
 
         coins -= price;
+    }
+
+    public void SavePlayerData()
+    {
+        SaveSystem.SavePlayerData(this);
+    }
+
+    public void LoadPlayerData()
+    {
+        SavePlayerData data = SaveSystem.LoadPlayerData();
+
+        uniquePlayerName = data.uniquePlayerName;
+        strStat = data.strStat;
+        conStat = data.conStat;
+        dexStat = data.dexStat;
+        armor = data.armor;
+        hitPointsMax = data.hitPointsMax;
+        hitPointsCur = data.hitPointsCur;
+        coins = data.coins;
+        experience = data.experience;
+        slot1 = data.slot1;
+        slot2 = data.slot2;
+        slot3 = data.slot3;
+        slot4 = data.slot4;
+        slot5 = data.slot5;
+        slot6 = data.slot6;
     }
 }

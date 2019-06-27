@@ -8,7 +8,7 @@ public class PauseMenu : MonoBehaviour
 
     void Start()
     {
-        gameIsPaused = false;
+        //gameIsPaused = false;
         Time.timeScale = 1f;
     }
 
@@ -40,6 +40,11 @@ public class PauseMenu : MonoBehaviour
             selectGame.SetActive(true);
         if (options.active != false)
             options.SetActive(false);
+    }
+
+    public void SavePlayerData()
+    {
+        GameObject.Find("PlayerGM(Clone)").GetComponent<PlayerData>().SavePlayerData();
     }
 
     public void ShowMainMenu()

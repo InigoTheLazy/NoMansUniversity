@@ -12,6 +12,13 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("WalkingScene");
     }
 
+    public void ResumeGame()
+    {
+        playerStatsData.GetComponent<PlayerData>().LoadPlayerData();
+        Instantiate(playerStatsData);
+        SceneManager.LoadScene("WalkingScene");
+    }
+
     public void QuitGame()
     {
         Application.Quit();

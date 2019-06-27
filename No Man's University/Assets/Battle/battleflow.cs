@@ -44,7 +44,6 @@ public class battleflow : MonoBehaviour
         walkingPlayer = GameObject.Find("Player");
         initiateDeflect = true;
         dMAn = FindObjectOfType<DialogueManager>();
-        
     }
 
     void Update()

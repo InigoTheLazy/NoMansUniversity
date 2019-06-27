@@ -4,18 +4,6 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public string uniquePlayerName;
-    public int strStat;
-    public int conStat;
-    public int dexStat;
-    public int armor;
-    public int hitPointsMax;
-    public int hitPointsCur;
-    public int coins;
-    public int experience;
-
-    public bool slot1, slot2, slot3, slot4, slot5, slot6;
-
     [SerializeField] private AudioSource audio;
     [SerializeField] private AudioClip footstepSound;
     [SerializeField]
@@ -125,31 +113,5 @@ public class Player : MonoBehaviour
                 textExperience.text = experience.ToString();
             }
         }
-    }
-
-    public void SavePlayer()
-    {
-        SaveSystem.SavePlayer(this);
-    }
-
-    public void LoadPlayer()
-    {
-        PlayerData data = SaveSystem.LoadPlayer();
-
-        uniquePlayerName = data.uniquePlayerName;
-        strStat = data.strStat;
-        conStat = data.conStat;
-        dexStat = data.dexStat;
-        armor = data.armor;
-        hitPointsMax = data.hitPointsMax;
-        hitPointsCur = data.hitPointsCur;
-        coins = data.coins;
-        experience = data.experience;
-        slot1 = data.slot1;
-        slot2 = data.slot2;
-        slot3 = data.slot3;
-        slot4 = data.slot4;
-        slot5 = data.slot5;
-        slot6 = data.slot6;
     }
 }

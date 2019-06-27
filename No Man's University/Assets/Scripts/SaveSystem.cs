@@ -4,26 +4,26 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveSystem
 {
-    private static string path = Application.persistentDataPath + "/player.bin";
+    private static string path = Application.persistentDataPath + "/playerData.bin";
 
-    public static void SavePlayer(Player player)
+    public static void SavePlayerData(PlayerData playerData)
     {
         BinaryFormatter formatter = new BinaryFormatter();
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        PlayerData data = new PlayerData(player);
+        SavePlayerData data = new SavePlayerData(playerData);
 
         formatter.Serialize(stream, data);
         stream.Close();
     }
 
-    public static PlayerData LoadPlayer()
+    public static SavePlayerData LoadPlayerData()
     {
         if (File.Exists(path))
         {
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = new FileStream(path, FileMode.Open);
-            PlayerData data = formatter.Deserialize(stream) as PlayerData;
+            SavePlayerData data = formatter.Deserialize(stream) as SavePlayerData;
             stream.Close();
             return data;
         }
