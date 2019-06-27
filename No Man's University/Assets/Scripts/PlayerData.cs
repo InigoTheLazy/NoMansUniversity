@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+[System.Serializable]
 public class PlayerData : MonoBehaviour
 {
     public string uniquePlayerName;
@@ -13,6 +14,25 @@ public class PlayerData : MonoBehaviour
     public int experience;
 
     public bool slot1, slot2, slot3, slot4, slot5, slot6;
+
+    public PlayerData(Player player)
+    {
+        uniquePlayerName = player.uniquePlayerName;
+        strStat = player.strStat;
+        conStat = player.conStat;
+        dexStat = player.dexStat;
+        armor = player.armor;
+        hitPointsMax = player.hitPointsMax;
+        hitPointsCur = player.hitPointsCur;
+        coins = player.coins;
+        experience = player.experience;
+        slot1 = player.slot1;
+        slot2 = player.slot2;
+        slot3 = player.slot3;
+        slot4 = player.slot4;
+        slot5 = player.slot5;
+        slot6 = player.slot6;
+    }
 
     void Awake()
     {
@@ -68,6 +88,7 @@ public class PlayerData : MonoBehaviour
                 slot6 = true;
                 break;
         }
+
         coins -= price;
     }
 }
