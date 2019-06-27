@@ -2,8 +2,14 @@
 
 public class CharacterStatsScreen : MonoBehaviour
 {
-    public static bool gameIsPaused = false;
+    public static bool gameIsPaused;
     public GameObject characterMenuCanvas;
+
+    void Start()
+    {
+        gameIsPaused = false;
+        Time.timeScale = 1f;
+    }
 
     void Update()
     {

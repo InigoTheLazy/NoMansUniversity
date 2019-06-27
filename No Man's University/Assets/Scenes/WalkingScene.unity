@@ -753,7 +753,6 @@ GameObject:
   - component: {fileID: 251748529}
   - component: {fileID: 251748528}
   - component: {fileID: 251748527}
-  - component: {fileID: 251748526}
   - component: {fileID: 251748530}
   m_Layer: 0
   m_Name: NewLevelTrigger
@@ -762,20 +761,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &251748526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 251748525}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 747c115854409964ea4330473c180ce1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: 
-  loadlevel: WalkingScenev2
 --- !u!61 &251748527
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -858,7 +843,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251748525}
   m_LocalRotation: {x: -0, y: -0, z: -0.14879479, w: 0.9888681}
-  m_LocalPosition: {x: 7.59, y: -1.07, z: -0.10035036}
+  m_LocalPosition: {x: 7.76, y: -0.91, z: -0.10035036}
   m_LocalScale: {x: -4.221286, y: -0.9656973, z: -0.093757026}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1825,7 +1810,18 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6544910708054539336, guid: e39991bc2133c7f489d3948ca0ada89e,
+        type: 3}
+      propertyPath: pauseMenuCanvas
+      value: 
+      objectReference: {fileID: 488444751}
+    - target: {fileID: 6544910708054539336, guid: e39991bc2133c7f489d3948ca0ada89e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6544910708054539336, guid: e39991bc2133c7f489d3948ca0ada89e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e39991bc2133c7f489d3948ca0ada89e, type: 3}
 --- !u!1 &488444751 stripped
 GameObject:
@@ -2153,21 +2149,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7de10953bb5438d4a9295f4dac44b53f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uniquePlayerName: 
-  strStat: 0
-  conStat: 0
-  dexStat: 0
-  armor: 0
-  hitPointsMax: 0
-  hitPointsCur: 0
-  coins: 0
-  experience: 0
-  slot1: 0
-  slot2: 0
-  slot3: 0
-  slot4: 0
-  slot5: 0
-  slot6: 0
   audio: {fileID: 716330174}
   footstepSound: {fileID: 8300000, guid: 2cfa5e7884084c44d85a0366aa5a5dd4, type: 3}
   speed: 5
@@ -2947,8 +2928,8 @@ GameObject:
   - component: {fileID: 896620661}
   - component: {fileID: 896620660}
   - component: {fileID: 896620659}
-  - component: {fileID: 896620664}
   - component: {fileID: 896620663}
+  - component: {fileID: 896620664}
   m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Untagged

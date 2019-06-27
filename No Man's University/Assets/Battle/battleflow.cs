@@ -152,10 +152,8 @@ public class battleflow : MonoBehaviour
 
     private void DamageDecreaseAttempt()
     {
-        
         initiateDeflect = false;
-
-
+        
             int randomNumber = Random.Range(0, 4);
             switch (randomNumber)
             {
@@ -192,7 +190,6 @@ public class battleflow : MonoBehaviour
         defendYourself = true;
         //Invoke("NoMoreDefending", 10f);
 
-
         Invoke("TurnOffAllLetters", 2f);
     }
 
@@ -228,6 +225,7 @@ public class battleflow : MonoBehaviour
         int coins = 0;
         int exp = 0;
         GameObject.Find("generic_character_1 1").GetComponent<herocon>().strengthPotionOn = false;
+
         switch (enemyNumber)
         {
             case 0:
@@ -246,6 +244,7 @@ public class battleflow : MonoBehaviour
                 exp = 1000;
                 break;
         }
+
         CanvasObject.SetActive(false);
         ShowPanel(false);
         CombatUI.SetActive(false);
@@ -288,5 +287,4 @@ public class battleflow : MonoBehaviour
                 break;
         }
     }
-
 }

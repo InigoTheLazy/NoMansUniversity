@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class herocon : MonoBehaviour
 {
@@ -59,8 +58,6 @@ public class herocon : MonoBehaviour
         {
             strengthPotionOn = false;
         }
-
-
     }
 
     IEnumerator turnEnd()

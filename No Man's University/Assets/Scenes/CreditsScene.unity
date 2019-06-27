@@ -292,7 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95e9477d8d9e97640b1aacc14f25e32a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadLevel: MainMenu
+  loadLevel: WalkingScene
 --- !u!1 &718974695
 GameObject:
   m_ObjectHideFlags: 0

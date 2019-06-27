@@ -1696,7 +1696,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 627036247}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aefa59e9f269ef349a718fdea36d4ca7, type: 3}
   m_Name: 
@@ -2689,7 +2689,6 @@ GameObject:
   - component: {fileID: 1032703564}
   - component: {fileID: 1032703565}
   - component: {fileID: 1032703566}
-  - component: {fileID: 1032703567}
   - component: {fileID: 1032703568}
   - component: {fileID: 1032703571}
   - component: {fileID: 1032703570}
@@ -2805,19 +2804,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   battleInventory: {fileID: 1032703560}
   combatMenu: {fileID: 1504745651}
---- !u!114 &1032703567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032703560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cf3b0f4b5095bd47997ab5f72f0bbb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 196971339}
 --- !u!328 &1032703568
 VideoPlayer:
   m_ObjectHideFlags: 0

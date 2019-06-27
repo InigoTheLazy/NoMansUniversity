@@ -21,6 +21,7 @@ public class enemycon3 : MonoBehaviour
         {
             float a = 1;
             int randomNumber = Random.Range(0, 3);
+
             switch (randomNumber)
             {
                 case 0:
@@ -35,6 +36,7 @@ public class enemycon3 : MonoBehaviour
                     a = 2f;
                     break;
             }
+
             StartCoroutine(turnEnd(a));
             Invoke("EnemyTurnEnd", 3);
         }
@@ -51,8 +53,6 @@ public class enemycon3 : MonoBehaviour
             battleflow.enemyNumber = 2;
             Destroy(gameObject);
         }
-
-
     }
 
     IEnumerator turnEnd(float a)
@@ -69,6 +69,5 @@ public class enemycon3 : MonoBehaviour
     {
         battleflow.whichturn = 1;
     }
-
 }
 

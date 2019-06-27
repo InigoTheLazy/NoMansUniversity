@@ -3,12 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public static bool gameIsPaused = false;
+    public static bool gameIsPaused;
     public GameObject pauseMenuCanvas, selectGame, options;
 
     void Start()
     {
-        //gameIsPaused = false;
+        gameIsPaused = false;
         Time.timeScale = 1f;
     }
 
@@ -27,7 +27,8 @@ public class PauseMenu : MonoBehaviour
     {
         gameIsPaused = false;
         Time.timeScale = 1f;
-        pauseMenuCanvas.SetActive(false);
+        if (pauseMenuCanvas)
+            pauseMenuCanvas.SetActive(false);
     }
 
     void Pause()
