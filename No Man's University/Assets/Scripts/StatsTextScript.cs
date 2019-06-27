@@ -101,6 +101,28 @@ public class StatsTextScript : MonoBehaviour
         DisplayDescription(3);
     }
 
+    public void StrengthDescription()
+    {
+        DisplayDescription(4);
+    }
+
+    public void ConstitutionDescription()
+    {
+        DisplayDescription(5);
+    }
+
+    public void DexterityDescription()
+    {
+        DisplayDescription(6);
+    }
+
+    public void ArmorDescription()
+    {
+        DisplayDescription(7);
+    }
+
+
+
     void DisplayDescription(int index)
     {
         description = GameObject.Find("Description").GetComponent<TextMeshProUGUI>();
@@ -118,6 +140,18 @@ public class StatsTextScript : MonoBehaviour
                 break;
             case 3:
                 description.text = "Increases dexterity\nCosts 100 XP";
+                break;
+            case 4:
+                description.text = "Strength determines how strong your attacks will be.";
+                break;
+            case 5:
+                description.text = "Constitution determines how much max HP you have.";
+                break;
+            case 6:
+                description.text = "Dexterity increase your armor.";
+                break;
+            case 7:
+                description.text = "Armor determines how much damage taken is reduced.";
                 break;
             default:
                 description.text = "";
