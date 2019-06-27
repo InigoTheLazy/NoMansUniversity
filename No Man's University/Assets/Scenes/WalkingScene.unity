@@ -2150,6 +2150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 716330174}
+  musicSource: {fileID: 0}
   footstepSound: {fileID: 8300000, guid: 2cfa5e7884084c44d85a0366aa5a5dd4, type: 3}
   speed: 5
   startPoint: 
@@ -2294,7 +2295,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.25
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
