@@ -4,5 +4,5 @@ Contributions:
 ♦Matas Skarbalius - art and animation
 ♦Ignas Baneničius - project management
 ♦Dinaras Klykūnas - menu and save/load system
-♦Aurelijus Varpučianskis - code for battle, potions etc
 ♦Pijus Baltrušis Baltrušaitis - code for walking
+♦Aurelijus Varpučianskis - code for battle, potions etc
